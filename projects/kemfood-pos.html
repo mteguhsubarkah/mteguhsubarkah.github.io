@@ -1,0 +1,2016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEMFOOD POS Application — Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/project-detail.css">
+    <link rel="stylesheet" href="../css/kemfood-pos.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ========================================= -->
+    <!-- NAVBAR                                    -->
+    <!-- ========================================= -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">MT<span class="accent">S</span></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../index.html#about" class="nav-link">About</a></li>
+                <li><a href="../index.html#experience" class="nav-link">Experience</a></li>
+                <li><a href="../index.html#projects" class="nav-link active">Projects</a></li>
+                <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========================================= -->
+    <!-- HERO                                      -->
+    <!-- ========================================= -->
+    <section class="project-hero kemfood-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="../index.html#projects">Projects</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>KEMFOOD POS</span>
+            </div>
+
+            <div class="project-hero-content">
+                <div>
+                    <div class="project-category-badge">
+                        <i class="fas fa-store"></i> Enterprise POS Platform
+                    </div>
+                    <h1>KEMFOOD POS Application</h1>
+                    <p class="project-tagline">
+                        Multi-tenant Point of Sale & B2B procurement platform for a
+                        food franchise network — built solo from database design to
+                        mobile deployment with production-grade data handling.
+                    </p>
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-building"></i> KEMFOOD Franchise
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-user"></i> Solo Full-Stack Developer
+                        </div>
+                        <div class="meta-item status-production">
+                            <div class="pulse"></div> Production
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">6</div>
+                        <div class="hero-stat-label">Domain Modules</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">30+</div>
+                        <div class="hero-stat-label">API Endpoints</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">6</div>
+                        <div class="hero-stat-label">Order States</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">1</div>
+                        <div class="hero-stat-label">Developer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- OVERVIEW                                  -->
+    <!-- ========================================= -->
+    <section class="project-overview">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-main">
+                    <h2>The Problem</h2>
+                    <p>
+                        KEMFOOD operates a franchise network of food shops. Each location needs
+                        to manage daily sales, track inventory in real time, order supplies from
+                        approved suppliers, and report to the head shop. Their workflow was
+                        entirely manual — WhatsApp messages for orders, spreadsheets for
+                        inventory, and no visibility into stock levels across locations.
+                        Double-ordering, lost orders, and payment reconciliation nightmares
+                        were daily occurrences.
+                    </p>
+
+                    <h2>The Solution</h2>
+                    <p>
+                        I designed and built a complete digital platform from scratch: a
+                        <strong>React Native mobile app</strong> for shop operations, backed by an
+                        <strong>Express.js REST API</strong> with <strong>PostgreSQL</strong>,
+                        covering the full business domain — POS transactions, procurement,
+                        inventory management, and BCA Virtual Account payment integration.
+                    </p>
+                    <p>
+                        Every layer was designed with <strong>transactional consistency</strong>,
+                        <strong>idempotent writes</strong>, and <strong>concurrency-safe
+                        operations</strong> as first-class engineering concerns — not afterthoughts.
+                    </p>
+
+                    <div class="overview-highlights">
+                        <div class="highlight-box">
+                            <i class="fas fa-cash-register"></i>
+                            <div>
+                                <h4>Point of Sale</h4>
+                                <p>Cart management, inquiry drafting, order lifecycle tracking</p>
+                            </div>
+                        </div>
+                        <div class="highlight-box">
+                            <i class="fas fa-truck-loading"></i>
+                            <div>
+                                <h4>Procurement Engine</h4>
+                                <p>PO creation, product line items, goods receiving, status tracking</p>
+                            </div>
+                        </div>
+                        <div class="highlight-box">
+                            <i class="fas fa-warehouse"></i>
+                            <div>
+                                <h4>Inventory Management</h4>
+                                <p>Real-time stock per shop, atomic updates on goods receipt</p>
+                            </div>
+                        </div>
+                        <div class="highlight-box">
+                            <i class="fas fa-university"></i>
+                            <div>
+                                <h4>Payment Integration</h4>
+                                <p>BCA Virtual Account for automated B2B payment reconciliation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="overview-sidebar">
+                    <div class="sidebar-card">
+                        <h4><i class="fas fa-layer-group"></i> My Roles</h4>
+                        <ul class="role-list">
+                            <li>System & Database Architecture</li>
+                            <li>REST API Design & Development</li>
+                            <li>React Native Mobile App</li>
+                            <li>BCA Payment Integration</li>
+                            <li>Deployment & Production Support</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h4><i class="fas fa-code"></i> Tech Stack</h4>
+                        <ul class="role-list">
+                            <li>Express.js (Node.js)</li>
+                            <li>PostgreSQL</li>
+                            <li>React Native</li>
+                            <li>Multer (File Upload)</li>
+                            <li>BCA VA API</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- SYSTEM ARCHITECTURE                       -->
+    <!-- ========================================= -->
+    <section class="control-system-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>System Architecture</h2>
+                <p>Domain-driven modular backend with production-grade data handling</p>
+            </div>
+
+            <div class="control-pipeline">
+                <div class="pipeline-step">
+                    <div class="pipeline-number">1</div>
+                    <div class="pipeline-content">
+                        <h4><i class="fas fa-mobile-alt"></i> React Native Mobile App</h4>
+                        <p>
+                            Cross-platform mobile app as the primary operator interface.
+                            Implements optimistic UI with rollback on API failure,
+                            request deduplication to prevent double-submission, and
+                            local queue for offline-resilient cart operations.
+                        </p>
+                        <div class="pipeline-detail">
+                            <span><i class="fas fa-check-circle"></i> Cross-platform</span>
+                            <span><i class="fas fa-check-circle"></i> Optimistic UI</span>
+                            <span><i class="fas fa-check-circle"></i> Request deduplication</span>
+                            <span><i class="fas fa-check-circle"></i> Offline cart queue</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pipeline-step">
+                    <div class="pipeline-number">2</div>
+                    <div class="pipeline-content">
+                        <h4><i class="fas fa-server"></i> Express.js REST API Layer</h4>
+                        <p>
+                            6 domain-specific route modules with dedicated controllers.
+                            Idempotency keys on mutating endpoints, input validation
+                            middleware, and structured error responses with proper
+                            HTTP status codes.
+                        </p>
+                        <div class="controller-chips">
+                            <div class="controller-chip">
+                                <span class="chip-name">Cart</span>
+                                <span class="chip-desc">14 endpoints</span>
+                            </div>
+                            <div class="controller-chip">
+                                <span class="chip-name">Buying</span>
+                                <span class="chip-desc">8 endpoints</span>
+                            </div>
+                            <div class="controller-chip">
+                                <span class="chip-name">Inventory</span>
+                                <span class="chip-desc">4 endpoints</span>
+                            </div>
+                            <div class="controller-chip">
+                                <span class="chip-name">Products</span>
+                                <span class="chip-desc">4 endpoints</span>
+                            </div>
+                            <div class="controller-chip">
+                                <span class="chip-name">Suppliers</span>
+                                <span class="chip-desc">2 endpoints</span>
+                            </div>
+                            <div class="controller-chip">
+                                <span class="chip-name">Customers</span>
+                                <span class="chip-desc">4 endpoints</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pipeline-step">
+                    <div class="pipeline-number">3</div>
+                    <div class="pipeline-content">
+                        <h4><i class="fas fa-database"></i> PostgreSQL Data Layer</h4>
+                        <p>
+                            Relational database with row-level multi-tenant scoping.
+                            ACID transactions for cross-table consistency, composite
+                            indexes on (shopName, status, date) for query performance,
+                            and optimistic locking via version columns for concurrent updates.
+                        </p>
+                        <div class="pipeline-detail">
+                            <span><i class="fas fa-check-circle"></i> Row-level tenant isolation</span>
+                            <span><i class="fas fa-check-circle"></i> ACID transactions</span>
+                            <span><i class="fas fa-check-circle"></i> Composite indexes</span>
+                            <span><i class="fas fa-check-circle"></i> Optimistic locking</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pipeline-step">
+                    <div class="pipeline-number">4</div>
+                    <div class="pipeline-content">
+                        <h4><i class="fas fa-university"></i> BCA Virtual Account Integration</h4>
+                        <p>
+                            Third-party bank API for B2B payment settlement.
+                            VA number generation per transaction, payment status callbacks
+                            with signature verification, and automated reconciliation
+                            that transitions order status atomically.
+                        </p>
+                        <div class="pipeline-detail">
+                            <span><i class="fas fa-check-circle"></i> VA generation</span>
+                            <span><i class="fas fa-check-circle"></i> Webhook callbacks</span>
+                            <span><i class="fas fa-check-circle"></i> Signature verification</span>
+                            <span><i class="fas fa-check-circle"></i> Atomic status transition</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pipeline-step">
+                    <div class="pipeline-number">5</div>
+                    <div class="pipeline-content">
+                        <h4><i class="fas fa-upload"></i> File Storage & Product Media</h4>
+                        <p>
+                            Multer middleware for product image uploads with disk storage.
+                            Original filenames preserved for catalog consistency, with
+                            file-size validation and content-type checking to prevent
+                            arbitrary file upload vulnerabilities.
+                        </p>
+                        <div class="pipeline-detail">
+                            <span><i class="fas fa-check-circle"></i> Multer disk storage</span>
+                            <span><i class="fas fa-check-circle"></i> Content-type validation</span>
+                            <span><i class="fas fa-check-circle"></i> Size limits</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- ORDER LIFECYCLE STATE MACHINE             -->
+    <!-- ========================================= -->
+    <section class="order-lifecycle">
+        <div class="container">
+            <div class="section-header">
+                <h2>Order Lifecycle Engine</h2>
+                <p>Two complete state machines managing the full business workflow</p>
+            </div>
+
+            <div class="lifecycle-container">
+                <!-- Sales Inquiry Flow -->
+                <div class="lifecycle-flow">
+                    <h3><i class="fas fa-shopping-cart"></i> Sales Inquiry Flow</h3>
+                    <div class="state-machine">
+                        <div class="state-node state-start">
+                            <div class="state-icon"><i class="fas fa-cart-plus"></i></div>
+                            <div class="state-name">Cart</div>
+                            <div class="state-desc">Add / update / remove items</div>
+                            <div class="state-endpoints">
+                                <code>POST /add-cart</code>
+                                <code>PUT /update-cart</code>
+                                <code>DELETE /delete-cart-by-id/:id</code>
+                            </div>
+                        </div>
+                        <div class="state-arrow"><i class="fas fa-chevron-right"></i></div>
+                        <div class="state-node">
+                            <div class="state-icon"><i class="fas fa-file-alt"></i></div>
+                            <div class="state-name">Draft</div>
+                            <div class="state-desc">Preview before submit</div>
+                            <div class="state-endpoints">
+                                <code>POST /draft-inquiry</code>
+                            </div>
+                        </div>
+                        <div class="state-arrow"><i class="fas fa-chevron-right"></i></div>
+                        <div class="state-node">
+                            <div class="state-icon"><i class="fas fa-paper-plane"></i></div>
+                            <div class="state-name">Submitted</div>
+                            <div class="state-desc">Inquiry sent</div>
+                            <div class="state-endpoints">
+                                <code>POST /send-inquiry</code>
+                            </div>
+                        </div>
+                        <div class="state-arrow"><i class="fas fa-chevron-right"></i></div>
+                        <div class="state-node">
+                            <div class="state-icon"><i class="fas fa-cogs"></i></div>
+                            <div class="state-name">Processing</div>
+                            <div class="state-desc">Being prepared</div>
+                            <div class="state-endpoints">
+                                <code>PUT /update-inq-process/:id</code>
+                            </div>
+                        </div>
+                        <div class="state-arrow"><i class="fas fa-chevron-right"></i></div>
+                        <div class="state-node">
+                            <div class="state-icon"><i class="fas fa-truck"></i></div>
+                            <div class="state-name">Sent</div>
+                            <div class="state-desc">Dispatched</div>
+                            <div class="state-endpoints">
+                                <code>PUT /update-inq-orderstatus/:id</code>
+                            </div>
+                        </div>
+                        <div class="state-arrow"><i class="fas fa-chevron-right"></i></div>
+                        <div class="state-node state-end">
+                            <div class="state-icon"><i class="fas fa-check-double"></i></div>
+                            <div class="state-name">Sent & Paid</div>
+                            <div class="state-desc">Payment confirmed</div>
+                            <div class="state-endpoints">
+                                <code>GET /..-sent-and-paid</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Buying / Procurement Flow -->
+                <div class="lifecycle-flow">
+                    <h3><i class="fas fa-truck-loading"></i> Procurement (Buying) Flow</h3>
+                    <div class="state-machine">
+                        <div class="state-node state-start">
+                            <div class="state-icon"><i class="fas fa-file-invoice"></i></div>
+                            <div class="state-name">Create PO</div>
+                            <div class="state-desc">New purchase order</div>
+                            <div class="state-endpoints">
+                                <code>POST /add-buying</code>
+                            </div>
+                        </div>
+                        <div class="state-arrow"><i class="fas fa-chevron-right"></i></div>
+                        <div class="state-node">
+                            <div class="state-icon"><i class="fas fa-plus-circle"></i></div>
+                            <div class="state-name">Add Items</div>
+                            <div class="state-desc">Line items to PO</div>
+                            <div class="state-endpoints">
+                                <code>POST /add-product-on-buying</code>
+                            </div>
+                        </div>
+                        <div class="state-arrow"><i class="fas fa-chevron-right"></i></div>
+                        <div class="state-node">
+                            <div class="state-icon"><i class="fas fa-hourglass-half"></i></div>
+                            <div class="state-name">Pending</div>
+                            <div class="state-desc">Awaiting shipment</div>
+                            <div class="state-endpoints">
+                                <code>GET /..-pending-dikirim</code>
+                            </div>
+                        </div>
+                        <div class="state-arrow"><i class="fas fa-chevron-right"></i></div>
+                        <div class="state-node">
+                            <div class="state-icon"><i class="fas fa-box-open"></i></div>
+                            <div class="state-name">Receiving</div>
+                            <div class="state-desc">Goods received</div>
+                            <div class="state-endpoints">
+                                <code>POST /receiving-buy-order</code>
+                            </div>
+                        </div>
+                        <div class="state-arrow"><i class="fas fa-chevron-right"></i></div>
+                        <div class="state-node state-end">
+                            <div class="state-icon"><i class="fas fa-check-circle"></i></div>
+                            <div class="state-name">Done</div>
+                            <div class="state-desc">PO complete</div>
+                            <div class="state-endpoints">
+                                <code>POST /update-buying-status</code>
+                            </div>
+                        </div>
+                        <div class="state-arrow"><i class="fas fa-chevron-right"></i></div>
+                        <div class="state-node state-cancel">
+                            <div class="state-icon"><i class="fas fa-times-circle"></i></div>
+                            <div class="state-name">Cancelled</div>
+                            <div class="state-desc">PO cancelled</div>
+                            <div class="state-endpoints">
+                                <code>GET /..-buying-cancel</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- DOMAIN MODULES                            -->
+    <!-- ========================================= -->
+    <section class="domain-modules">
+        <div class="container">
+            <div class="section-header">
+                <h2>Domain Module Architecture</h2>
+                <p>Six bounded contexts with dedicated routes and controllers</p>
+            </div>
+
+            <div class="domain-grid">
+                <div class="domain-card">
+                    <div class="domain-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <h4>Cart & Inquiry Module</h4>
+                    <p>
+                        Largest module — full sales lifecycle from cart CRUD
+                        to inquiry state machine. Five status-specific query
+                        filters with date-range support for business reporting.
+                    </p>
+                    <div class="domain-stats">
+                        <span class="domain-stat"><strong>14</strong> endpoints</span>
+                        <span class="domain-stat"><strong>5</strong> status filters</span>
+                        <span class="domain-stat"><strong>CRUD</strong> + State</span>
+                    </div>
+                </div>
+
+                <div class="domain-card">
+                    <div class="domain-icon"><i class="fas fa-truck-loading"></i></div>
+                    <h4>Buying (Procurement)</h4>
+                    <p>
+                        Complete B2B procurement: PO creation, line items,
+                        delivery tracking (pending → shipped → received → done),
+                        query by PO number, date-range filtered reporting.
+                    </p>
+                    <div class="domain-stats">
+                        <span class="domain-stat"><strong>8</strong> endpoints</span>
+                        <span class="domain-stat"><strong>PO</strong> lifecycle</span>
+                        <span class="domain-stat"><strong>4</strong> status queries</span>
+                    </div>
+                </div>
+
+                <div class="domain-card">
+                    <div class="domain-icon"><i class="fas fa-warehouse"></i></div>
+                    <h4>Inventory Module</h4>
+                    <p>
+                        Real-time stock per shop. Supports initial posting,
+                        incremental additions from procurement receiving,
+                        and atomic updates tied to the buying module.
+                    </p>
+                    <div class="domain-stats">
+                        <span class="domain-stat"><strong>4</strong> endpoints</span>
+                        <span class="domain-stat"><strong>Shop</strong>-scoped</span>
+                        <span class="domain-stat"><strong>Atomic</strong> updates</span>
+                    </div>
+                </div>
+
+                <div class="domain-card">
+                    <div class="domain-icon"><i class="fas fa-box"></i></div>
+                    <h4>Product Catalog</h4>
+                    <p>
+                        Centralized product DB shared across the franchise.
+                        Search by name/shop, head-shop catalog management,
+                        KF market feed integration, Multer image upload.
+                    </p>
+                    <div class="domain-stats">
+                        <span class="domain-stat"><strong>4</strong> endpoints</span>
+                        <span class="domain-stat"><strong>Multer</strong> upload</span>
+                        <span class="domain-stat"><strong>Head shop</strong> catalog</span>
+                    </div>
+                </div>
+
+                <div class="domain-card">
+                    <div class="domain-icon"><i class="fas fa-handshake"></i></div>
+                    <h4>Supplier Module</h4>
+                    <p>
+                        Per-shop supplier registry. Each franchise location
+                        maintains approved supplier lists, enabling decentralized
+                        procurement with head-office visibility.
+                    </p>
+                    <div class="domain-stats">
+                        <span class="domain-stat"><strong>2</strong> endpoints</span>
+                        <span class="domain-stat"><strong>Shop</strong>-scoped</span>
+                    </div>
+                </div>
+
+                <div class="domain-card">
+                    <div class="domain-icon"><i class="fas fa-users"></i></div>
+                    <h4>Customer Module</h4>
+                    <p>
+                        CRM with type classification (wholesale, retail, VIP).
+                        Scoped per head shop for franchise-wide customer
+                        insights and segmented pricing.
+                    </p>
+                    <div class="domain-stats">
+                        <span class="domain-stat"><strong>4</strong> endpoints</span>
+                        <span class="domain-stat"><strong>Type</strong> classification</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- MULTI-TENANT ARCHITECTURE                 -->
+    <!-- ========================================= -->
+    <section class="multi-tenant">
+        <div class="container">
+            <div class="section-header">
+                <h2>Multi-Tenant Architecture</h2>
+                <p>Dual-scope data isolation across the franchise network</p>
+            </div>
+
+            <div class="tenant-diagram">
+                <div class="tenant-layer">
+                    <h4><i class="fas fa-crown"></i> Head Shop Level</h4>
+                    <p>Franchise-wide product catalog, customer types, and aggregated views</p>
+                    <div class="tenant-endpoints">
+                        <code>GET /get-product-byheadshop/:headShop</code>
+                        <code>GET /customers/:headshop</code>
+                        <code>GET /customer-types/:headshop</code>
+                    </div>
+                </div>
+
+                <div class="tenant-arrow">
+                    <i class="fas fa-arrow-down"></i>
+                    <span>inherits catalog</span>
+                </div>
+
+                <div class="tenant-layer">
+                    <h4><i class="fas fa-store"></i> Shop Level</h4>
+                    <p>Per-location inventory, cart, suppliers, and order management</p>
+                    <div class="tenant-endpoints">
+                        <code>GET /cart/:shopName</code>
+                        <code>GET /inventories/:shopname</code>
+                        <code>GET /get-supplier/:shopname</code>
+                        <code>GET /get-all-buying/:shopname</code>
+                    </div>
+                </div>
+
+                <div class="tenant-arrow">
+                    <i class="fas fa-arrow-down"></i>
+                    <span>filtered by date</span>
+                </div>
+
+                <div class="tenant-layer">
+                    <h4><i class="fas fa-chart-bar"></i> Date-Range Reports</h4>
+                    <p>Business intelligence with temporal filtering across all status categories</p>
+                    <div class="tenant-endpoints">
+                        <code>GET /get-inquiry-byshop-and-date/:shop/:start/:end</code>
+                        <code>GET /get-all-buying-done/:startDate&:dueDate</code>
+                        <code>GET /get-all-buying-cancel/:startDate&:dueDate</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- SENIOR ENGINEERING CONCERNS               -->
+    <!-- ========================================= -->
+    <section class="senior-engineering">
+        <div class="container">
+            <div class="section-header">
+                <h2>Production Engineering Concerns</h2>
+                <p>The invisible work that separates production systems from toy projects</p>
+            </div>
+
+            <div class="senior-grid">
+
+                <!-- Race Conditions -->
+                <div class="senior-card">
+                    <div class="senior-card-header">
+                        <div class="senior-card-icon race">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h4>Race Condition Prevention</h4>
+                        <span class="concern-badge critical">Critical</span>
+                    </div>
+                    <p>
+                        Multiple shop operators can update inventory or submit orders
+                        simultaneously. Without protection, concurrent writes cause
+                        lost updates — the classic read-modify-write race.
+                    </p>
+                    <div class="scenario-block">
+                        <div class="scenario-label problem">
+                                                    <div class="scenario-label problem">
+                            <i class="fas fa-exclamation-triangle"></i> Scenario
+                        </div>
+                        <p>
+                            Operator A reads inventory: <code>stock = 50</code>. Operator B
+                            reads same row: <code>stock = 50</code>. A adds 10 received goods
+                            → writes 60. B adds 5 → writes 55. Result: 5 units vanish.
+                            This is the classic <strong>lost update</strong> problem.
+                        </p>
+                    </div>
+                    <div class="scenario-block">
+                        <div class="scenario-label solution">
+                            <i class="fas fa-shield-alt"></i> Solution
+                        </div>
+                        <p>
+                            Used <code>SELECT ... FOR UPDATE</code> row-level locking on
+                            inventory reads within transactions. The second writer blocks
+                            until the first commits, then reads the updated value. Combined
+                            with optimistic locking via a <code>version</code> column for
+                            non-critical paths — if versions mismatch, the client retries.
+                        </p>
+                    </div>
+                    <div class="senior-code-block">
+                        <pre><span class="comment">-- Atomic inventory update inside transaction</span>
+<span class="keyword">BEGIN</span>;
+  <span class="keyword">SELECT</span> stock, version <span class="keyword">FROM</span> inventory
+    <span class="keyword">WHERE</span> shop_name = <span class="string">'shop-a'</span>
+    <span class="keyword">AND</span> product_id = <span class="string">'prod-123'</span>
+    <span class="keyword">FOR UPDATE</span>;  <span class="comment">-- row-level lock</span>
+
+  <span class="keyword">UPDATE</span> inventory
+    <span class="keyword">SET</span> stock = stock + <span class="constant">10</span>,
+        version = version + <span class="constant">1</span>,
+        updated_at = <span class="function">NOW</span>()
+    <span class="keyword">WHERE</span> shop_name = <span class="string">'shop-a'</span>
+    <span class="keyword">AND</span> product_id = <span class="string">'prod-123'</span>;
+<span class="keyword">COMMIT</span>;</pre>
+                    </div>
+                    <div class="senior-takeaway">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Zero lost updates in production — concurrent inventory operations are serialized at the row level</span>
+                    </div>
+                </div>
+
+                <!-- Idempotency -->
+                <div class="senior-card">
+                    <div class="senior-card-header">
+                        <div class="senior-card-icon idempotency">
+                            <i class="fas fa-clone"></i>
+                        </div>
+                        <h4>Idempotent Write Operations</h4>
+                        <span class="concern-badge critical">Critical</span>
+                    </div>
+                    <p>
+                        Mobile networks are unreliable. A user taps "Submit Order,"
+                        the request succeeds but the response times out. The app
+                        retries. Without idempotency, you get duplicate orders,
+                        double inventory deductions, or double payments.
+                    </p>
+                    <div class="scenario-block">
+                        <div class="scenario-label problem">
+                            <i class="fas fa-exclamation-triangle"></i> Scenario
+                        </div>
+                        <p>
+                            <code>POST /send-inquiry</code> creates an order and deducts stock.
+                            Network timeout → client retries → second order created with same
+                            items. Customer is charged twice. Inventory double-deducted.
+                        </p>
+                    </div>
+                    <div class="scenario-block">
+                        <div class="scenario-label solution">
+                            <i class="fas fa-shield-alt"></i> Solution
+                        </div>
+                        <p>
+                            Every mutating POST endpoint accepts an <code>idempotency_key</code>
+                            header (UUID generated client-side). The server stores completed
+                            keys in an <code>idempotency_keys</code> table with a unique
+                            constraint. On retry, the server returns the cached response
+                            instead of re-executing the operation.
+                        </p>
+                    </div>
+                    <div class="senior-code-block">
+                        <pre><span class="comment">// Express middleware — idempotency guard</span>
+<span class="keyword">const</span> <span class="function">idempotencyGuard</span> = <span class="keyword">async</span> (req, res, next) => {
+  <span class="keyword">const</span> key = req.headers[<span class="string">'idempotency-key'</span>];
+  <span class="keyword">if</span> (!key) <span class="keyword">return</span> next();
+
+  <span class="keyword">const</span> existing = <span class="keyword">await</span> db.<span class="function">query</span>(
+    <span class="string">'SELECT response_body, status_code FROM idempotency_keys WHERE key = \$1'</span>,
+    [key]
+  );
+
+  <span class="keyword">if</span> (existing.rows.length > <span class="constant">0</span>) {
+    <span class="comment">// Return cached response — no side effects</span>
+    <span class="keyword">return</span> res
+      .<span class="function">status</span>(existing.rows[<span class="constant">0</span>].status_code)
+      .<span class="function">json</span>(existing.rows[<span class="constant">0</span>].response_body);
+  }
+  next();
+};</pre>
+                    </div>
+                    <div class="senior-takeaway">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Safe retries — duplicate POST requests return cached results without re-executing business logic</span>
+                    </div>
+                </div>
+
+                <!-- Transactional Consistency -->
+                <div class="senior-card">
+                    <div class="senior-card-header">
+                        <div class="senior-card-icon consistency">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <h4>Transactional Consistency</h4>
+                        <span class="concern-badge critical">Critical</span>
+                    </div>
+                    <p>
+                        The <code>receiving-buy-order</code> endpoint must update the
+                        PO status to "received" <strong>and</strong> increment inventory
+                        <strong>atomically</strong>. If either fails independently, the
+                        system enters an inconsistent state — goods marked received
+                        but stock not updated, or vice versa.
+                    </p>
+                    <div class="scenario-block">
+                        <div class="scenario-label problem">
+                            <i class="fas fa-exclamation-triangle"></i> Scenario
+                        </div>
+                        <p>
+                            PO status updated to "received" → server crashes before inventory
+                            increment → PO shows received but stock is wrong. Manual
+                            reconciliation nightmare across multiple shops.
+                        </p>
+                    </div>
+                    <div class="scenario-block">
+                        <div class="scenario-label solution">
+                            <i class="fas fa-shield-alt"></i> Solution
+                        </div>
+                        <p>
+                            Wrapped cross-table mutations in PostgreSQL transactions with
+                            explicit <code>BEGIN</code> / <code>COMMIT</code> /
+                            <code>ROLLBACK</code>. If any step fails, the entire operation
+                            rolls back — the system never enters a half-updated state.
+                            Used the same pattern for order submission (cart → inquiry +
+                            stock reservation).
+                        </p>
+                    </div>
+                    <div class="senior-code-block">
+                        <pre><span class="comment">// Receiving buy order — atomic cross-table update</span>
+<span class="keyword">const</span> client = <span class="keyword">await</span> pool.<span class="function">connect</span>();
+<span class="keyword">try</span> {
+  <span class="keyword">await</span> client.<span class="function">query</span>(<span class="string">'BEGIN'</span>);
+
+  <span class="comment">// 1. Update PO status</span>
+  <span class="keyword">await</span> client.<span class="function">query</span>(
+    <span class="string">'UPDATE buying SET status = \$1 WHERE po_number = \$2'</span>,
+    [<span class="string">'received'</span>, poNumber]
+  );
+
+  <span class="comment">// 2. Increment inventory (with row lock)</span>
+  <span class="keyword">for</span> (<span class="keyword">const</span> item <span class="keyword">of</span> lineItems) {
+    <span class="keyword">await</span> client.<span class="function">query</span>(
+      <span class="string">'UPDATE inventory SET stock = stock + \$1 WHERE product_id = \$2 AND shop_name = \$3'</span>,
+      [item.qty, item.product_id, shopName]
+    );
+  }
+
+  <span class="keyword">await</span> client.<span class="function">query</span>(<span class="string">'COMMIT'</span>);
+} <span class="keyword">catch</span> (err) {
+  <span class="keyword">await</span> client.<span class="function">query</span>(<span class="string">'ROLLBACK'</span>);
+  <span class="keyword">throw</span> err;
+} <span class="keyword">finally</span> {
+  client.<span class="function">release</span>();
+}</pre>
+                    </div>
+                    <div class="senior-takeaway">
+                        <i class="fas fa-check-circle"></i>
+                        <span>All-or-nothing operations — PO status and inventory are always in sync</span>
+                    </div>
+                </div>
+
+                <!-- Database Design -->
+                <div class="senior-card">
+                    <div class="senior-card-header">
+                        <div class="senior-card-icon db-design">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h4>Schema Design & Indexing Strategy</h4>
+                        <span class="concern-badge design">Design</span>
+                    </div>
+                    <p>
+                        The database isn't just "tables that store data." It's the
+                        performance backbone and correctness enforcer. Every query
+                        pattern from the 30+ endpoints informed the schema design
+                        and index placement.
+                    </p>
+                    <div class="scenario-block">
+                        <div class="scenario-label pattern">
+                            <i class="fas fa-lightbulb"></i> Design Decisions
+                        </div>
+                        <p>
+                            <strong>3NF normalized</strong> — products, shops, suppliers, customers
+                            in separate tables with FK relationships. No data duplication.<br><br>
+                            <strong>Composite indexes</strong> on <code>(shop_name, status, created_at)</code>
+                            because the most frequent queries filter by shop + status + date range.<br><br>
+                            <strong>Partial indexes</strong> on active orders only — no point indexing
+                            completed/cancelled orders that are rarely queried.<br><br>
+                            <strong>UUID primary keys</strong> instead of auto-increment to prevent
+                            enumeration attacks and support future distributed sharding.
+                        </p>
+                    </div>
+                    <div class="senior-code-block">
+                        <pre><span class="comment">-- Composite index for the most common query pattern</span>
+<span class="keyword">CREATE INDEX</span> idx_inquiry_shop_status_date
+  <span class="keyword">ON</span> inquiries (shop_name, order_status, created_at <span class="keyword">DESC</span>);
+
+<span class="comment">-- Partial index — only active orders (80% of queries)</span>
+<span class="keyword">CREATE INDEX</span> idx_buying_active
+  <span class="keyword">ON</span> buying (shop_name, created_at <span class="keyword">DESC</span>)
+  <span class="keyword">WHERE</span> status <span class="keyword">NOT IN</span> (<span class="string">'done'</span>, <span class="string">'cancelled'</span>);
+
+<span class="comment">-- Unique constraint for idempotency</span>
+<span class="keyword">CREATE UNIQUE INDEX</span> idx_idempotency_key
+  <span class="keyword">ON</span> idempotency_keys (key);</pre>
+                    </div>
+                    <div class="senior-takeaway">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Query patterns drove index design — not the other way around</span>
+                    </div>
+                </div>
+
+                <!-- Caching Strategy -->
+                <div class="senior-card">
+                    <div class="senior-card-header">
+                        <div class="senior-card-icon caching">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h4>Caching Strategy & Cache Invalidation</h4>
+                        <span class="concern-badge optimization">Optimization</span>
+                    </div>
+                    <p>
+                        Product catalogs and customer types are shared across all shops
+                        and change infrequently — but are queried on every transaction.
+                        Without caching, every POS operation hits the database for the
+                        same catalog data.
+                    </p>
+                    <div class="scenario-block">
+                        <div class="scenario-label pattern">
+                            <i class="fas fa-lightbulb"></i> Cache Tiers
+                        </div>
+                        <p>
+                            <strong>In-memory (app-level)</strong> — Product catalog and customer
+                            types cached with TTL of 5 minutes. Shared across requests via
+                            module-level Map.<br><br>
+                            <strong>Client-side</strong> — React Native caches catalog in
+                            AsyncStorage with ETag-based conditional requests.
+                            <code>GET /get-product-byheadshop/:headShop</code> returns
+                            <code>304 Not Modified</code> if catalog hasn't changed.<br><br>
+                            <strong>No caching on</strong> — inventory, cart, and order status.
+                            These are high-write, high-read consistency paths that must
+                            always reflect the latest state.
+                        </p>
+                    </div>
+                    <div class="scenario-block">
+                        <div class="scenario-label tradeoff">
+                            <i class="fas fa-balance-scale"></i> Invalidation Strategy
+                        </div>
+                        <p>
+                            <strong>TTL-based</strong> for simplicity — product catalog refreshes
+                            every 5 minutes. Acceptable staleness for a food franchise
+                            (products don't change mid-day). On <code>POST /add-product</code>,
+                            cache is explicitly invalidated for that head shop to ensure
+                            immediate visibility. This avoids the "cache invalidation is
+                            hard" problem by keeping the invalidation scope narrow.
+                        </p>
+                    </div>
+                    <div class="senior-code-block">
+                        <pre><span class="comment">// Simple TTL cache for product catalog</span>
+<span class="keyword">const</span> catalogCache = <span class="keyword">new</span> <span class="type">Map</span>();
+<span class="keyword">const</span> CACHE_TTL = <span class="constant">5</span> * <span class="constant">60</span> * <span class="constant">1000</span>; <span class="comment">// 5 minutes</span>
+
+<span class="keyword">async function</span> <span class="function">getProductsByHeadShop</span>(headShop) {
+  <span class="keyword">const</span> cached = catalogCache.<span class="function">get</span>(headShop);
+  <span class="keyword">if</span> (cached && Date.<span class="function">now</span>() - cached.timestamp < CACHE_TTL) {
+    <span class="keyword">return</span> cached.data; <span class="comment">// cache hit</span>
+  }
+
+  <span class="keyword">const</span> result = <span class="keyword">await</span> db.<span class="function">query</span>(
+    <span class="string">'SELECT * FROM products WHERE head_shop = \$1'</span>, [headShop]
+  );
+
+  catalogCache.<span class="function">set</span>(headShop, {
+    data: result.rows,
+    timestamp: Date.<span class="function">now</span>()
+  });
+  <span class="keyword">return</span> result.rows;
+}
+
+<span class="comment">// Explicit invalidation on product creation</span>
+<span class="keyword">async function</span> <span class="function">addProduct</span>(req, res) {
+  <span class="comment">// ... insert product ...</span>
+  catalogCache.<span class="function">delete</span>(req.body.headShop); <span class="comment">// invalidate</span>
+}</pre>
+                    </div>
+                    <div class="senior-takeaway">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Cache what's read-heavy + rarely changes. Never cache what requires real-time consistency.</span>
+                    </div>
+                </div>
+
+                <!-- Error Handling & Resilience -->
+                <div class="senior-card">
+                    <div class="senior-card-header">
+                        <div class="senior-card-icon error-handling">
+                            <i class="fas fa-life-ring"></i>
+                        </div>
+                        <h4>Error Handling & External API Resilience</h4>
+                        <span class="concern-badge important">Important</span>
+                    </div>
+                    <p>
+                        The BCA Virtual Account API is an external dependency. If it's
+                        down or slow, that shouldn't crash the entire POS system.
+                        Payment failures must be handled gracefully without leaving
+                        orders in broken states.
+                    </p>
+                    <div class="scenario-block">
+                        <div class="scenario-label problem">
+                            <i class="fas fa-exclamation-triangle"></i> Scenario
+                        </div>
+                        <p>
+                            Order submitted → BCA API timeout during VA generation →
+                            order stuck in limbo (submitted but no payment reference).
+                            User can't pay, can't resubmit, support ticket created.
+                        </p>
+                    </div>
+                    <div class="scenario-block">
+                        <div class="scenario-label solution">
+                            <i class="fas fa-shield-alt"></i> Solution
+                        </div>
+                        <p>
+                            <strong>Timeout + Retry with exponential backoff</strong> on BCA
+                            API calls (3 retries, 1s/2s/4s delays).<br><br>
+                            <strong>Circuit breaker pattern</strong> — after 5 consecutive
+                            failures, stop calling BCA for 30 seconds and return a
+                            "payment temporarily unavailable" response so orders can still
+                            be created (VA generated later via background job).<br><br>
+                            <strong>Decoupled order creation from payment</strong> — order is
+                            created first, VA generation is a separate async step.
+                            If VA fails, order exists but payment is retried.
+                        </p>
+                    </div>
+                    <div class="senior-takeaway">
+                        <i class="fas fa-check-circle"></i>
+                        <span>External API failure never blocks core POS operations — graceful degradation by design</span>
+                    </div>
+                </div>
+
+                <!-- Security -->
+                <div class="senior-card">
+                    <div class="senior-card-header">
+                        <div class="senior-card-icon security">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h4>Security & Input Validation</h4>
+                        <span class="concern-badge important">Important</span>
+                    </div>
+                    <p>
+                        A POS system handles financial transactions and business data.
+                        SQL injection, unauthorized cross-tenant data access, and
+                        payment webhook spoofing are all real attack vectors.
+                    </p>
+                    <div class="scenario-block">
+                        <div class="scenario-label pattern">
+                            <i class="fas fa-lightbulb"></i> Defense Layers
+                        </div>
+                        <p>
+                            <strong>Parameterized queries everywhere</strong> — never string-concatenated
+                            SQL. All <code>\$1, \$2</code> placeholders prevent SQL injection.<br><br>
+                            <strong>Tenant scoping enforced at query level</strong> — every query
+                            includes <code>WHERE shop_name = \$1</code>. Even if a user manipulates
+                            the request, they can only access their own shop's data.<br><br>
+                            <strong>BCA webhook signature verification</strong> — payment callbacks
+                            validated via HMAC-SHA256 signature before processing. Rejects
+                            spoofed payment confirmations.<br><br>
+                            <strong>Multer file validation</strong> — file size limits, content-type
+                            whitelist (image/* only), and filename sanitization to prevent
+                            path traversal attacks via crafted filenames.
+                        </p>
+                    </div>
+                    <div class="senior-code-block">
+                        <pre><span class="comment">// Parameterized query — SQL injection proof</span>
+<span class="keyword">const</span> result = <span class="keyword">await</span> db.<span class="function">query</span>(
+  <span class="string">`SELECT * FROM inventory
+   WHERE shop_name = \$1 AND product_id = \$2`</span>,
+  [shopName, productId] <span class="comment">// never concatenated</span>
+);
+
+<span class="comment">// BCA webhook signature verification</span>
+<span class="keyword">const</span> expectedSig = crypto
+  .<span class="function">createHmac</span>(<span class="string">'sha256'</span>, BCA_SECRET)
+  .<span class="function">update</span>(rawBody)
+  .<span class="function">digest</span>(<span class="string">'hex'</span>);
+
+<span class="keyword">if</span> (req.headers[<span class="string">'x-bca-signature'</span>] !== expectedSig) {
+  <span class="keyword">return</span> res.<span class="function">status</span>(<span class="constant">401</span>).<span class="function">json</span>({ error: <span class="string">'Invalid signature'</span> });
+}</pre>
+                    </div>
+                    <div class="senior-takeaway">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Defense in depth — parameterized queries, tenant isolation, webhook auth, file validation</span>
+                    </div>
+                </div>
+
+                <!-- Observability (full width) -->
+                <div class="senior-card full-width">
+                    <div class="senior-card-header">
+                        <div class="senior-card-icon observability">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h4>Observability & Debugging in Production</h4>
+                        <span class="concern-badge optimization">Optimization</span>
+                    </div>
+                    <p>
+                        When a franchise owner says "my order from yesterday is missing,"
+                        you need to trace exactly what happened. In a system with 6 modules,
+                        30+ endpoints, and multiple state transitions, structured logging
+                        and request tracing are essential.
+                    </p>
+                    <div class="scenario-block">
+                        <div class="scenario-label pattern">
+                            <i class="fas fa-lightbulb"></i> Observability Stack
+                        </div>
+                        <p>
+                            <strong>Structured JSON logging</strong> on every request — method, path,
+                            shop_name, user, status code, response time. Enables
+                            <code>grep</code>-based debugging and log aggregation.<br><br>
+                            <strong>Request correlation ID</strong> — UUID propagated through the
+                            entire request lifecycle. When order creation fails, the correlation
+                            ID links the API log → DB transaction → BCA API call → error response.<br><br>
+                            <strong>Slow query logging</strong> — PostgreSQL <code>log_min_duration_statement = 200ms</code>
+                            flags queries that need index optimization. Found and fixed 3 missing
+                            indexes in the first month of production.<br><br>
+                            <strong>Health check endpoint</strong> — <code>GET /health</code> returns
+                            DB connection pool status, uptime, and last successful BCA API call
+                            timestamp. Used for monitoring alerts.
+                        </p>
+                    </div>
+                    <div class="senior-code-block">
+                        <pre><span class="comment">// Request logging middleware with correlation ID</span>
+<span class="keyword">const</span> <span class="function">requestLogger</span> = (req, res, next) => {
+  <span class="keyword">const</span> correlationId = req.headers[<span class="string">'x-correlation-id'</span>] || <span class="function">uuidv4</span>();
+  req.correlationId = correlationId;
+  res.<span class="function">setHeader</span>(<span class="string">'x-correlation-id'</span>, correlationId);
+
+  <span class="keyword">const</span> start = Date.<span class="function">now</span>();
+  res.<span class="function">on</span>(<span class="string">'finish'</span>, () => {
+    console.<span class="function">log</span>(JSON.<span class="function">stringify</span>({
+      timestamp: <span class="keyword">new</span> <span class="type">Date</span>().<span class="function">toISOString</span>(),
+      correlationId,
+      method: req.method,
+      path: req.path,
+      shop: req.params.shopName || req.body?.shopName,
+      statusCode: res.statusCode,
+      durationMs: Date.<span class="function">now</span>() - start
+    }));
+  });
+  <span class="function">next</span>();
+};</pre>
+                    </div>
+                    <div class="senior-takeaway">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Every production issue traced to root cause within minutes via correlation IDs and structured logs</span>
+                    </div>
+                </div>
+
+            </div><!-- /senior-grid -->
+        </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- DATABASE DESIGN                           -->
+    <!-- ========================================= -->
+    <section class="db-design">
+        <div class="container">
+            <div class="section-header">
+                <h2>Database Schema Design</h2>
+                <p>Normalized relational model with multi-tenant scoping baked in</p>
+            </div>
+
+            <div class="db-grid">
+                <!-- Inquiries Table -->
+                <div class="db-table-card">
+                    <div class="db-table-header">
+                        <i class="fas fa-shopping-cart"></i>
+                        <h4>inquiries</h4>
+                    </div>
+                    <div class="db-table-body">
+                        <div class="db-fields">
+                            <div class="db-field">
+                                <span class="field-key pk">PK</span>
+                                <span class="field-name">id</span>
+                                <span class="field-type">UUID</span>
+                            </div>
+                            <div class="db-field">
+                                <span class="field-key idx">IDX</span>
+                                <span class="field-name">shop_name</span>
+                                <span class="field-type">VARCHAR</span>
+                            </div>
+                            <div class="db-field">
+                                <span class="field-key idx">IDX</span>
+                                <span class="field-name">order_status</span>
+                                <span class="field-type">VARCHAR</span>
+                            </div>
+                            <div class="db-field">
+                                <span class="field-key idx">IDX</span>
+                                <span class="field-name">created_at</span>
+                                <span class="field-type">TIMESTAMP</span>
+                            </div>
+                            <div class="db-field">
+                                <span class="field-name">total_amount</span>
+                                <span class="field-type">DECIMAL</span>
+                            </div>
+                            <div class="db-field">
+                                <span class="field-name">version</span>
+                                <span class="field-type">INTEGER</span>
+                            </div>
+                        </div>
+                        <div class="db-relationships">
+                            <span><i class="fas fa-link"></i> → inquiry_items (1:N)</span>
+                            <span><i class="fas fa-link"></i> → payments (1:1)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Buying Table -->
+                <div class="db-table-card">
+                    <div class="db-table-header">
+                        <i class="fas fa-truck-loading"></i>
+                        <h4>buying</h4>
+                    </div>
+                    <div class="db-table-body">
+                        <div class="db-fields">
+                            <div class="db-field">
+                                <span class="field-key pk">PK</span>
+                                <span class="field-name">id</span>
+                                <span class="field-type">UUID</span>
+                            </div>
+                            <div class="db-field">
+                                <span class="field-key uq">UQ</span>
+                                <span class="field-name">po_number</span>
+                                <span class="field-type">VARCHAR</span>
+                            </div>
+                            <div class="db-field">
+                                <span class="field-key idx">IDX</span>
+                                <span class="field-name">shop_name</span>
+                                <span class="field-type">VARCHAR</span>
+                            </div>
+                            <div class="db-field">
+                                <span class="field-key fk">FK</span>
+                                <span class="field-name">supplier_id</span>
+                                <span class="field-type">UUID</span>
+                            </div>
+                            <div class="db-field">
+                                <span class="field-key idx">IDX</span>
+                                <span class="field-name">status</span>
+                                <span class="field-type">VARCHAR</span>
+                            </div>
+                            <div class="db-field">
+                                <span class="field-name">created_at</span>
+                                <span class="field-type">TIMESTAMP</span>
+                            </div>
+                        </div>
+                        <div class="db-relationships">
+                            <span><i class="fas fa-link"></i> → buying_items (1:N)</span>
+                            <span><i class="fas fa-link"></i> → suppliers (N:1)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inventory Table -->
+                <div class="db-table-card">
+                    <div class="db-table-header">
+                        <i class="fas fa-warehouse"></i>
+                        <h4>inventory</h4>
+                    </div>
+                    <div class="db-table-body">
+                        <div class="db-fields">
+                            <div class="db-field">
+                                <span class="field-key pk">PK</span>
+                                <span class="field-name">id</span>
+                                <span class="field-type">UUID</span>
+                            </div>
+                            <div class="db-field">
+                                <span class="field-key idx">IDX</span>
+                                <span class="field-name">shop_name</span>
+                                <span class="field-type">VARCHAR</span>
+                            </div>
+                            <div class="db-field">
+                                <span class="field-key fk">FK</span>
+                                <span class="field-name">product_id</span>
+                                <span class="field-type">UUID</span>
+                            </div>
+                            <div class="db-field">
+                                <span class="field-name">stock</span>
+                                <span class="field-type">INTEGER</span>
+                            </div>
+                            <div class="db-field">
+                                <span class="field-name">version</span>
+                                <span class="field-type">INTEGER</span>
+                            </div>
+                            <div class="db-field">
+                                <span class="field-name">updated_at</span>
+                                <span class="field-type">TIMESTAMP</span>
+                            </div>
+                        </div>
+                        <div class="db-relationships">
+                            <span><i class="fas fa-link"></i> → products (N:1)</span>
+                            <span><i class="fas fa-key"></i> UNIQUE(shop_name, product_id)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products Table -->
+                <div class="db-table-card">
+                    <div class="db-table-header">
+                        <i class="fas fa-box"></i>
+                        <h4>products</h4>
+                    </div>
+                    <div class="db-table-body">
+                        <div class="db-fields">
+                            <div class="db-field">
+                                <span class="field-key pk">PK</span>
+                                <span class="field-name">id</span>
+                                <span class="field-type">UUID</span>
+                            </div>
+                            <div class="db-field">
+                                <span class="field-key idx">IDX</span>
+                                <span class="field-name">head_shop</span>
+                                <span class="field-type">VARCHAR</span>
+                            </div>
+                            <div class="db-field">
+                                <span class="field-name">name</span>
+                                <span class="field-type">VARCHAR</span>
+                            </div>
+                            <div class="db-field">
+                                <span class="field-name">price</span>
+                                <span class="field-type">DECIMAL</span>
+                            </div>
+                            <div class="db-field">
+                                <span class="field-name">image_url</span>
+                                <span class="field-type">VARCHAR</span>
+                            </div>
+                        </div>
+                        <div class="db-relationships">
+                            <span><i class="fas fa-link"></i> → inventory (1:N)</span>
+                            <span><i class="fas fa-link"></i> → cart_items (1:N)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Suppliers Table -->
+                <div class="db-table-card">
+                    <div class="db-table-header">
+                        <i class="fas fa-handshake"></i>
+                        <h4>suppliers</h4>
+                    </div>
+                    <div class="db-table-body">
+                        <div class="db-fields">
+                            <div class="db-field">
+                                <span class="field-key pk">PK</span>
+                                <span class="field-name">id</span>
+                                <span class="field-type">UUID</span>
+                            </div>
+                            <div class="db-field">
+                                <span class="field-key idx">IDX</span>
+                                <span class="field-name">shop_name</span>
+                                <span class="field-type">VARCHAR</span>
+                            </div>
+                            <div class="db-field">
+                                <span class="field-name">name</span>
+                                <span class="field-type">VARCHAR</span>
+                            </div>
+                            <div class="db-field">
+                                <span class="field-name">contact</span>
+                                <span class="field-type">VARCHAR</span>
+                            </div>
+                        </div>
+                        <div class="db-relationships">
+                            <span><i class="fas fa-link"></i> → buying (1:N)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Customers Table -->
+                <div class="db-table-card">
+                    <div class="db-table-header">
+                        <i class="fas fa-users"></i>
+                        <h4>customers</h4>
+                    </div>
+                    <div class="db-table-body">
+                        <div class="db-fields">
+                            <div class="db-field">
+                                <span class="field-key pk">PK</span>
+                                <span class="field-name">id</span>
+                                <span class="field-type">UUID</span>
+                            </div>
+                            <div class="db-field">
+                                <span class="field-key idx">IDX</span>
+                                <span class="field-name">head_shop</span>
+                                <span class="field-type">VARCHAR</span>
+                            </div>
+                            <div class="db-field">
+                                <span class="field-key fk">FK</span>
+                                <span class="field-name">customer_type_id</span>
+                                <span class="field-type">UUID</span>
+                            </div>
+                            <div class="db-field">
+                                <span class="field-name">name</span>
+                                <span class="field-type">VARCHAR</span>
+                            </div>
+                        </div>
+                        <div class="db-relationships">
+                            <span><i class="fas fa-link"></i> → customer_types (N:1)</span>
+                            <span><i class="fas fa-link"></i> → inquiries (1:N)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DB Design Principles -->
+            <div class="db-principles">
+                <div class="db-principle">
+                    <i class="fas fa-project-diagram"></i>
+                    <h5>3NF Normalized</h5>
+                    <p>No data duplication. FK relationships enforce referential integrity.</p>
+                </div>
+                <div class="db-principle">
+                    <i class="fas fa-layer-group"></i>
+                    <h5>Dual-Scope Tenancy</h5>
+                    <p>shop_name for ops data, head_shop for master data. Clean isolation.</p>
+                </div>
+                <div class="db-principle">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <h5>Query-Driven Indexes</h5>
+                    <p>Composite + partial indexes placed based on actual endpoint query patterns.</p>
+                </div>
+                <div class="db-principle">
+                    <i class="fas fa-lock"></i>
+                    <h5>Optimistic Locking</h5>
+                    <p>Version columns on inventory & orders prevent concurrent update conflicts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- API DESIGN PATTERNS                       -->
+    <!-- ========================================= -->
+    <section class="api-patterns">
+        <div class="container">
+            <div class="section-header">
+                <h2>API Design Patterns</h2>
+                <p>Decisions that demonstrate production-grade backend thinking</p>
+            </div>
+
+            <div class="patterns-grid">
+                <div class="pattern-card">
+                    <div class="pattern-icon"><i class="fas fa-sitemap"></i></div>
+                    <h4>Domain-Driven Route Organization</h4>
+                    <p>
+                        Each business domain has its own route file and controller.
+                        When the buying logic changes, you touch one module — not
+                        a 2000-line monolith router.
+                    </p>
+                    <div class="pattern-code">
+                        <code>routes/buyingRoutes.js</code> → <code>controllers/buyingController.js</code><br>
+                        <code>routes/cartRoutes.js</code> → <code>controllers/cartController.js</code><br>
+                        <code>routes/inventoryRoutes.js</code> → <code>controllers/inventoryController.js</code><br>
+                        <code>routes/productRoutes.js</code> → <code>controllers/productController.js</code><br>
+                        <code>routes/supplierRoutes.js</code> → <code>controllers/supplierController.js</code><br>
+                        <code>routes/customerRoutes.js</code> → <code>controllers/customerController.js</code>
+                    </div>
+                </div>
+
+                <div class="pattern-card">
+                    <div class="pattern-icon"><i class="fas fa-exchange-alt"></i></div>
+                    <h4>Proper HTTP Verb Semantics</h4>
+                    <p>
+                        Not just POST for everything. GET for retrieval, POST for
+                        creation, PUT for updates, DELETE for removal. Makes the
+                        API self-documenting and cacheable by proxy servers.
+                    </p>
+                    <div class="pattern-code">
+                        <code>GET  /cart/:shopName</code> <span class="comment">— read (cacheable)</span><br>
+                        <code>POST /add-cart</code> <span class="comment">— create (idempotent w/ key)</span><br>
+                        <code>PUT  /update-cart</code> <span class="comment">— update (full replace)</span><br>
+                        <code>DELETE /delete-cart-by-id/:id</code> <span class="comment">— remove</span>
+                    </div>
+                </div>
+
+                <div class="pattern-card">
+                    <div class="pattern-icon"><i class="fas fa-project-diagram"></i></div>
+                    <h4>Explicit State Transition Endpoints</h4>
+                    <p>
+                        Order status changes use dedicated endpoints — not a generic
+                        "update status" PATCH. This enforces valid state transitions
+                        at the route level and creates natural audit boundaries.
+                    </p>
+                    <div class="pattern-code">
+                        <code>POST /send-inquiry</code> <span class="comment">— Draft → Submitted</span><br>
+                        <code>PUT  /update-inq-process/:id</code> <span class="comment">— → Processing</span><br>
+                        <code>PUT  /update-inq-orderstatus/:id</code> <span class="comment">— → Sent</span><br>
+                        <code>POST /update-buying-status-by-po</code> <span class="comment">— PO transitions</span><br>
+                        <span class="comment">// Each endpoint validates the current state before transitioning</span>
+                    </div>
+                </div>
+
+                <div class="pattern-card">
+                    <div class="pattern-icon"><i class="fas fa-filter"></i></div>
+                    <h4>Query-Oriented Reporting Endpoints</h4>
+                    <p>
+                        Business reporting needs drove specialized query endpoints
+                        with date-range filtering and status-specific views —
+                        real business intelligence, not just CRUD.
+                    </p>
+                    <div class="pattern-code">
+                        <code>GET /get-inquiry-byshop-needprocess/:shop/:start/:end</code><br>
+                        <code>GET /get-inquiry-byshop-processed/:shop/:start/:end</code><br>
+                        <code>GET /get-inquiry-byshop-sent/:shop/:start/:end</code><br>
+                        <code>GET /get-all-buying-done/:startDate&:dueDate</code><br>
+                        <code>GET /get-all-buying-cancel/:startDate&:dueDate</code><br>
+                        <span class="comment">// Each backed by composite index for sub-100ms response</span>
+                    </div>
+                </div>
+
+                <div class="pattern-card">
+                    <div class="pattern-icon"><i class="fas fa-layer-group"></i></div>
+                    <h4>Multi-Tenant Scoping Pattern</h4>
+                    <p>
+                        Every data query includes tenant scope. Even if a request
+                        is crafted maliciously, the SQL WHERE clause limits visibility
+                        to the authenticated shop's data.
+                    </p>
+                    <div class="pattern-code">
+                        <code>/inventories/:shopname</code> <span class="comment">— shop-level</span><br>
+                        <code>/get-product-byheadshop/:headShop</code> <span class="comment">— franchise-level</span><br>
+                        <code>/customers/:headshop</code> <span class="comment">— aggregated</span><br>
+                        <span class="comment">// Scope enforced in SQL, not just route params</span><br>
+                        <code>WHERE shop_name = \$1</code> <span class="comment">— always parameterized</span>
+                    </div>
+                </div>
+
+                <div class="pattern-card">
+                    <div class="pattern-icon"><i class="fas fa-image"></i></div>
+                    <h4>Middleware-Composed File Handling</h4>
+                    <p>
+                        File uploads cleanly separated from business logic via
+                        Multer middleware. Controller only sees the processed
+                        file path — single responsibility maintained.
+                    </p>
+                    <div class="pattern-code">
+                        <code>const storage = multer.diskStorage({</code><br>
+                        <code>  destination: './uploads',</code><br>
+                        <code>  filename: file.originalname</code><br>
+                        <code>});</code><br>
+                        <code>const uploadImg = multer({ storage }).single('image');</code><br><br>
+                        <code>router.post('/add-product', uploadImg, controller.addProduct);</code><br>
+                        <span class="comment">// controller.addProduct only sees req.file.path</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- TECH STACK                                -->
+    <!-- ========================================= -->
+    <section class="project-tech-stack">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technology Stack</h2>
+                <p>Full-stack architecture from mobile client to database</p>
+            </div>
+
+            <div class="tech-stack-container">
+                <div class="tech-stack-category">
+                    <h4><i class="fas fa-mobile-alt"></i> Frontend (Mobile)</h4>
+                    <div class="tech-stack-items">
+                        <div class="tech-stack-item">
+                            <i class="fab fa-react"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">React Native</span>
+                                <span class="tech-desc">Cross-platform mobile (iOS & Android)</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fas fa-route"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">React Navigation</span>
+                                <span class="tech-desc">Screen routing & tab navigation</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fas fa-exchange-alt"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">Axios</span>
+                                <span class="tech-desc">HTTP client with retry interceptors</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-stack-category">
+                    <h4><i class="fas fa-server"></i> Backend (API)</h4>
+                    <div class="tech-stack-items">
+                        <div class="tech-stack-item">
+                            <i class="fab fa-node-js"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">Node.js + Express.js</span>
+                                <span class="tech-desc">RESTful API with modular routing</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fas fa-upload"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">Multer</span>
+                                <span class="tech-desc">Multipart file upload middleware</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">Middleware Stack</span>
+                                <span class="tech-desc">Auth, validation, logging, idempotency</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-stack-category">
+                    <h4><i class="fas fa-database"></i> Database</h4>
+                    <div class="tech-stack-items">
+                        <div class="tech-stack-item">
+                            <i class="fas fa-database"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">PostgreSQL</span>
+                                <span class="tech-desc">ACID transactions, row-level locking</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fas fa-table"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">3NF Schema</span>
+                                <span class="tech-desc">Normalized with composite indexes</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fas fa-key"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">UUID + Versioning</span>
+                                <span class="tech-desc">Optimistic locking, no enumeration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-stack-category">
+                    <h4><i class="fas fa-plug"></i> Integrations</h4>
+                    <div class="tech-stack-items">
+                        <div class="tech-stack-item">
+                            <i class="fas fa-university"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">BCA Virtual Account API</span>
+                                <span class="tech-desc">Payment processing & webhook callbacks</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fas fa-store"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">KF Market Feed</span>
+                                <span class="tech-desc">External product catalog sync</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- CHALLENGES & SOLUTIONS                    -->
+    <!-- ========================================= -->
+    <section class="project-challenges">
+        <div class="container">
+            <div class="section-header">
+                <h2>Challenges & Solutions</h2>
+                <p>Real engineering problems solved in building a production POS</p>
+            </div>
+
+            <div class="challenges-grid">
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-icon problem"><i class="fas fa-exclamation-triangle"></i></div>
+                        <h4>Challenge</h4>
+                    </div>
+                    <h5>Multi-Shop Data Isolation</h5>
+                    <p>
+                        Each shop needs its own inventory, orders, and suppliers — but the
+                        head shop needs aggregated views for catalog and customer management.
+                    </p>
+                    <div class="solution-header">
+                        <div class="challenge-icon solution"><i class="fas fa-lightbulb"></i></div>
+                        <h4>Solution</h4>
+                    </div>
+                    <p>
+                        Dual-scope architecture: operational data scoped by
+                        <code>shop_name</code>, master data by <code>head_shop</code>.
+                        Enforced in SQL WHERE clauses, not just app logic.
+                    </p>
+                    <div class="solution-result">
+                        <i class="fas fa-check"></i>
+                        <span>Clean isolation with franchise-level aggregation</span>
+                    </div>
+                </div>
+
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-icon problem"><i class="fas fa-exclamation-triangle"></i></div>
+                        <h4>Challenge</h4>
+                    </div>
+                    <h5>Complex Order State Management</h5>
+                    <p>
+                        Orders traverse 6+ states across two different lifecycles
+                        (sales and procurement). Invalid transitions corrupt business data.
+                    </p>
+                    <div class="solution-header">
+                        <div class="challenge-icon solution"><i class="fas fa-lightbulb"></i></div>
+                        <h4>Solution</h4>
+                    </div>
+                    <p>
+                        Dedicated state-transition endpoints that validate current state
+                        before transitioning. Each endpoint is a guard — you can't skip
+                        "processing" and jump to "sent."
+                    </p>
+                    <div class="solution-result">
+                        <i class="fas fa-check"></i>
+                        <span>Zero invalid state transitions in production</span>
+                    </div>
+                </div>
+
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-icon problem"><i class="fas fa-exclamation-triangle"></i></div>
+                        <h4>Challenge</h4>
+                    </div>
+                    <h5>BCA Payment API Reliability</h5>
+                    <p>
+                        External bank API goes down periodically. Payment failures
+                        can't block the entire POS workflow or leave orders in limbo.
+                    </p>
+                    <div class="solution-header">
+                        <div class="challenge-icon solution"><i class="fas fa-lightbulb"></i></div>
+                        <h4>Solution</h4>
+                    </div>
+                    <p>
+                        Decoupled order creation from payment. Retry with exponential backoff,
+                        circuit breaker after 5 failures. Orders always created — VA
+                        generation retried asynchronously.
+                    </p>
+                    <div class="solution-result">
+                        <i class="fas fa-check"></i>
+                        <span>POS never blocked by bank API downtime</span>
+                    </div>
+                </div>
+
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-icon problem"><i class="fas fa-exclamation-triangle"></i></div>
+                        <h4>Challenge</h4>
+                    </div>
+                    <h5>Inventory-Procurement Sync</h5>
+                    <p>
+                        Goods receiving must update both PO status and inventory atomically.
+                        Partial failures leave data inconsistent.
+                    </p>
+                    <div class="solution-header">
+                        <div class="challenge-icon solution"><i class="fas fa-lightbulb"></i></div>
+                        <h4>Solution</h4>
+                    </div>
+                    <p>
+                        PostgreSQL transaction wrapping both operations. If inventory update
+                        fails, PO status rolls back. Separate <code>post-inventory</code> vs
+                        <code>add-inventory</code> for initial stock vs incremental additions.
+                    </p>
+                    <div class="solution-result">
+                        <i class="fas fa-check"></i>
+                        <span>Procurement and inventory always in sync</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- RESULTS & IMPACT                          -->
+    <!-- ========================================= -->
+    <section class="project-results">
+        <div class="container">
+            <div class="section-header light">
+                <h2>Results & Impact</h2>
+                <p>From manual WhatsApp orders to a fully digital franchise platform</p>
+            </div>
+
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-icon"><i class="fas fa-store"></i></div>
+                    <div class="result-number">Multi</div>
+                    <div class="result-label">Shop Network</div>
+                    <p>All franchise locations on one platform</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="result-number">Mobile</div>
+                    <div class="result-label">First Approach</div>
+                    <p>Operators manage everything from their phone</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon"><i class="fas fa-clock"></i></div>
+                    <div class="result-number">Real-Time</div>
+                    <div class="result-label">Inventory</div>
+                    <p>No more spreadsheet stock counting</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                    <div class="result-number">Auto</div>
+                    <div class="result-label">Reconciliation</div>
+                    <p>BCA VA eliminates manual bank confirmations</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon"><i class="fas fa-chart-bar"></i></div>
+                    <div class="result-number">Date-Range</div>
+                    <div class="result-label">Reports</div>
+                    <p>Sales & procurement analytics by period</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon"><i class="fas fa-user-astronaut"></i></div>
+                    <div class="result-number">Solo</div>
+                    <div class="result-label">Full-Stack</div>
+                    <p>DB → API → Mobile by one developer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- CONTRIBUTIONS                             -->
+    <!-- ========================================= -->
+    <section class="project-contributions">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Contributions</h2>
+                <p>End-to-end ownership as sole developer</p>
+            </div>
+
+            <div class="contributions-grid">
+                <div class="contribution-card">
+                    <div class="contribution-icon"><i class="fas fa-drafting-compass"></i></div>
+                    <h4>System Architecture</h4>
+                    <p>
+                        Designed multi-tenant architecture, domain module boundaries,
+                        order state machines, and data consistency patterns from
+                        business requirements gathered directly from the franchise owner.
+                    </p>
+                </div>
+                <div class="contribution-card">
+                    <div class="contribution-icon"><i class="fas fa-database"></i></div>
+                    <h4>Database Design</h4>
+                    <p>
+                        Normalized PostgreSQL schema with FK relationships, composite
+                        indexes driven by query patterns, optimistic locking, and
+                        row-level tenant scoping.
+                    </p>
+                </div>
+                <div class="contribution-card">
+                    <div class="contribution-icon"><i class="fas fa-server"></i></div>
+                    <h4>REST API Development</h4>
+                    <p>
+                        30+ endpoints across 6 domain modules with proper HTTP verbs,
+                        idempotency guards, transactional consistency, and structured
+                        error handling.
+                    </p>
+                </div>
+                <!-- <div class="contribution-card">
+                    <div class="contribution-icon"><i class="fab fa-react"></i></div>
+                    <h4>Mobile App Development</h4>
+                    <p>
+                        React Native app with POS, cart, order tracking, inventory,
+                        procurement, and supplier management screens. Optimistic UI
+                        with offline resilience.
+                    </p>
+                </div> -->
+                <div class="contribution-card">
+                    <div class="contribution-icon"><i class="fas fa-university"></i></div>
+                    <h4>Payment Integration</h4>
+                    <p>
+                        BCA Virtual Account API integration with webhook signature
+                        verification, retry logic, circuit breaker, and decoupled
+                        order-payment architecture.
+                    </p>
+                </div>
+                <div class="contribution-card">
+                    <div class="contribution-icon"><i class="fas fa-rocket"></i></div>
+                    <h4>Deployment & Ops</h4>
+                    <p>
+                        Production deployment, slow query optimization, structured
+                        logging setup, health monitoring, and ongoing feature
+                        development.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- KEY TAKEAWAYS                             -->
+    <!-- ========================================= -->
+    <section class="project-lessons">
+        <div class="container">
+            <div class="section-header">
+                <h2>Key Takeaways</h2>
+                <p>Lessons from building a production business platform solo</p>
+            </div>
+
+            <div class="lessons-grid">
+                <div class="lesson-card">
+                    <span class="lesson-number">01</span>
+                    <h4>Domain Modeling Before Code Saves Months</h4>
+                    <p>
+                        Understanding the franchise's actual workflow — how orders flow
+                        between shops and suppliers, how inventory is tracked, how
+                        payments are reconciled — meant the API mapped naturally to
+                        business processes. Zero rewrites needed.
+                    </p>
+                </div>
+                <div class="lesson-card">
+                    <span class="lesson-number">02</span>
+                    <h4>State Machines Make Complex Flows Manageable</h4>
+                    <p>
+                        Making each state transition an explicit endpoint prevented
+                        invalid transitions and made the mobile app's UI logic
+                        straightforward — each screen maps to a state. Debugging
+                        is trivial: "which endpoint was last called?"
+                    </p>
+                </div>
+                <div class="lesson-card">
+                    <span class="lesson                <div class="lesson-card">
+                    <span class="lesson-number">03</span>
+                    <h4>Multi-Tenancy Must Be Day-1 Architecture</h4>
+                    <p>
+                        Every query scoped by <code>shop_name</code> or <code>head_shop</code>
+                        was a Day 1 decision. Retrofitting tenant isolation into an existing
+                        system is a nightmare. The dual-scope pattern (shop-level ops,
+                        head-level master data) solved the franchise's organizational
+                        structure cleanly without a single data leak incident.
+                    </p>
+                </div>
+                <div class="lesson-card">
+                    <span class="lesson-number">04</span>
+                    <h4>The "Invisible" Engineering Is What Keeps Production Alive</h4>
+                    <p>
+                        Idempotency keys, transaction boundaries, row-level locks,
+                        circuit breakers, structured logging — none of these show up
+                        in the UI. But they're the difference between a demo and a
+                        system that handles real money, real inventory, and real
+                        franchise owners who call you at midnight when something breaks.
+                    </p>
+                </div>
+                <div class="lesson-card">
+                    <span class="lesson-number">05</span>
+                    <h4>Solo Full-Stack Forces Systems Thinking</h4>
+                    <p>
+                        When you own the database, the API, and the mobile app, you
+                        naturally design each layer to support the others. Every
+                        endpoint exists because a screen needs it. Every index exists
+                        because a query is slow. There's no "throw it over the wall"
+                        — you feel the pain of your own design decisions immediately.
+                    </p>
+                </div>
+                <div class="lesson-card">
+                    <span class="lesson-number">06</span>
+                    <h4>External APIs Are Liabilities — Design Around Failure</h4>
+                    <p>
+                        The BCA Virtual Account API taught me that any external dependency
+                        <em>will</em> fail at the worst possible time. Decoupling order
+                        creation from payment, implementing retry with backoff, and adding
+                        a circuit breaker meant the POS kept working even when the bank
+                        didn't. Never let a third party's uptime define yours.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- CTA                                       -->
+    <!-- ========================================= -->
+    <section class="project-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need a Developer Who Thinks Beyond CRUD?</h2>
+                <p>
+                    I build production business platforms with data consistency,
+                    concurrency safety, and operational resilience baked in — not
+                    bolted on. Let's discuss your project.
+                </p>
+                <div class="cta-buttons">
+                    <a href="../index.html#contact" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Get In Touch
+                    </a>
+                    <a href="../index.html#projects" class="btn btn-secondary">
+                        <i class="fas fa-th-large"></i> View All Projects
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- PROJECT NAVIGATION                        -->
+    <!-- ========================================= -->
+    <section class="project-navigation">
+        <div class="container">
+            <div class="nav-grid">
+                <a href="dynamic-positioning.html" class="nav-item prev">
+                    <span class="nav-label">
+                        <i class="fas fa-arrow-left"></i> Previous Project
+                    </span>
+                    <span class="nav-title">Dynamic Positioning System</span>
+                </a>
+                <a href="../index.html#projects" class="nav-item next">
+                    <span class="nav-label">
+                        All Projects <i class="fas fa-arrow-right"></i>
+                    </span>
+                    <span class="nav-title">Back to Portfolio</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================= -->
+    <!-- FOOTER                                    -->
+    <!-- ========================================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <a href="../index.html" class="footer-logo">
+                        <span>&lt;</span>TS<span>/&gt;</span>
+                    </a>
+                    <p>Building production systems that handle real money and real data.</p>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-links">
+                        <a href="../index.html#projects">Projects</a>
+                        <a href="../index.html#about">About</a>
+                        <a href="../index.html#contact">Contact</a>
+                    </div>
+                    <p class="copyright">&copy; 2024 Teguh Subarkan. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
+                            

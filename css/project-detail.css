@@ -2582,6 +2582,1002 @@
     transform: scale(1.05);
 }
 
-/* Sidebar Blog Link */
+/* Sidebar Blog Link (was cut off) */
 .sidebar-link {
-    display
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.sidebar-link:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transform: translateX(5px);
+}
+
+.sidebar-link i {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+}
+
+/* ============================================= */
+/*  KEMFOOD POS — PROJECT-SPECIFIC STYLES        */
+/*  Extends project-detail.css                   */
+/* ============================================= */
+
+/* --------------------------------
+   KEMFOOD HERO VARIANT
+   -------------------------------- */
+.project-hero.kemfood-hero {
+    background: linear-gradient(135deg, #1a0a2e 0%, #2d1b4e 40%, #0f2027 100%);
+}
+
+.project-hero.kemfood-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        radial-gradient(circle at 20% 80%, rgba(245, 158, 11, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(99, 102, 241, 0.06) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.04) 0%, transparent 40%);
+    pointer-events: none;
+}
+
+.meta-item.status-production {
+    background: rgba(16, 185, 129, 0.3);
+    padding: 6px 16px;
+    border-radius: 20px;
+    color: #6ee7b7;
+}
+
+/* --------------------------------
+   ORDER LIFECYCLE STATE MACHINE
+   -------------------------------- */
+.order-lifecycle {
+    padding: 80px 0;
+}
+
+.lifecycle-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.lifecycle-flow > h3 {
+    font-size: 1.3rem;
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--text-primary);
+}
+
+.lifecycle-flow > h3 i {
+    color: var(--primary-color);
+}
+
+.state-machine {
+    display: flex;
+    align-items: stretch;
+    gap: 6px;
+    overflow-x: auto;
+    padding-bottom: 16px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.state-machine::-webkit-scrollbar {
+    height: 6px;
+}
+
+.state-machine::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+    border-radius: 3px;
+}
+
+.state-machine::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 3px;
+}
+
+.state-node {
+    flex: 1;
+    min-width: 145px;
+    padding: 18px 14px;
+    background: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+    border-radius: 14px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.state-node:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.15);
+}
+
+.state-node.state-start {
+    border-color: rgba(34, 197, 94, 0.5);
+    background: rgba(34, 197, 94, 0.05);
+}
+
+.state-node.state-end {
+    border-color: rgba(99, 102, 241, 0.5);
+    background: rgba(99, 102, 241, 0.05);
+}
+
+.state-node.state-cancel {
+    border-color: rgba(239, 68, 68, 0.5);
+    background: rgba(239, 68, 68, 0.05);
+}
+
+.state-icon {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.state-start .state-icon {
+    color: var(--success-color);
+}
+
+.state-end .state-icon {
+    color: var(--primary-color);
+}
+
+.state-cancel .state-icon {
+    color: var(--danger-color);
+}
+
+.state-name {
+    font-weight: 700;
+    font-size: 0.88rem;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.state-desc {
+    font-size: 0.73rem;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.state-endpoints {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.state-endpoints code {
+    display: block;
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-size: 0.62rem;
+    background: var(--bg-primary);
+    color: var(--primary-color);
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    word-break: break-all;
+    line-height: 1.4;
+}
+
+.state-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    min-width: 24px;
+}
+
+/* --------------------------------
+   DOMAIN MODULES GRID
+   -------------------------------- */
+.domain-modules {
+    padding: 80px 0;
+    background: var(--bg-secondary);
+}
+
+.domain-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.domain-card {
+    background: var(--bg-primary);
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.domain-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.domain-icon {
+    width: 58px;
+    height: 58px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.domain-card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+.domain-card > p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.domain-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.domain-stat {
+    font-size: 0.75rem;
+    padding: 5px 12px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.domain-stat strong {
+    color: var(--primary-color);
+}
+
+/* --------------------------------
+   MULTI-TENANT ARCHITECTURE
+   -------------------------------- */
+.multi-tenant {
+    padding: 80px 0;
+}
+
+.tenant-diagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.tenant-layer {
+    width: 100%;
+    padding: 28px 32px;
+    background: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+    border-radius: 16px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.tenant-layer:hover {
+    border-color: var(--primary-color);
+}
+
+.tenant-layer h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--text-primary);
+}
+
+.tenant-layer h4 i {
+    color: var(--primary-color);
+}
+
+.tenant-layer > p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+}
+
+.tenant-endpoints {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.tenant-endpoints code {
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-size: 0.72rem;
+    background: var(--bg-primary);
+    color: var(--primary-color);
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+}
+
+.tenant-arrow {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.tenant-arrow span {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* --------------------------------
+   API DESIGN PATTERNS
+   -------------------------------- */
+.api-patterns {
+    padding: 80px 0;
+    background: var(--bg-secondary);
+}
+
+.patterns-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.pattern-card {
+    background: var(--bg-primary);
+    padding: 28px;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pattern-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+.pattern-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(99, 102, 241, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+}
+
+.pattern-card h4 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+.pattern-card > p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.pattern-code {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 16px;
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-size: 0.75rem;
+    line-height: 1.9;
+    color: var(--text-muted);
+    overflow-x: auto;
+}
+
+.pattern-code code {
+    color: var(--primary-color);
+    font-size: inherit;
+    background: none;
+    padding: 0;
+}
+
+.pattern-code .comment {
+    color: var(--text-muted);
+    opacity: 0.6;
+}
+
+/* --------------------------------
+   SENIOR ENGINEERING SECTION
+   -------------------------------- */
+.senior-engineering {
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.senior-engineering::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        linear-gradient(135deg, #0c0a1a 0%, #1a0f2e 40%, #0f1a2e 70%, #0a1628 100%);
+    z-index: 0;
+}
+
+.senior-engineering::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        radial-gradient(ellipse at 20% 50%, rgba(239, 68, 68, 0.04), transparent 60%),
+        radial-gradient(ellipse at 80% 50%, rgba(99, 102, 241, 0.04), transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.senior-engineering > .container {
+    position: relative;
+    z-index: 1;
+}
+
+.senior-engineering .section-header h2 {
+    color: white;
+}
+
+.senior-engineering .section-header p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.senior-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.senior-card {
+    background: rgba(22, 22, 35, 0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 32px;
+    transition: all 0.3s ease;
+}
+
+.senior-card:hover {
+    border-color: rgba(99, 102, 241, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+.senior-card.full-width {
+    grid-column: 1 / -1;
+}
+
+.senior-card-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+}
+
+.senior-card-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    flex-shrink: 0;
+}
+
+.senior-card-icon.race {
+    background: rgba(239, 68, 68, 0.15);
+    color: #f87171;
+}
+
+.senior-card-icon.idempotency {
+    background: rgba(245, 158, 11, 0.15);
+    color: #fbbf24;
+}
+
+.senior-card-icon.consistency {
+    background: rgba(59, 130, 246, 0.15);
+    color: #60a5fa;
+}
+
+.senior-card-icon.caching {
+    background: rgba(16, 185, 129, 0.15);
+    color: #34d399;
+}
+
+.senior-card-icon.db-design {
+    background: rgba(99, 102, 241, 0.15);
+    color: #a5b4fc;
+}
+
+.senior-card-icon.security {
+    background: rgba(168, 85, 247, 0.15);
+    color: #c084fc;
+}
+
+.senior-card-icon.observability {
+    background: rgba(236, 72, 153, 0.15);
+    color: #f472b6;
+}
+
+.senior-card-icon.error-handling {
+    background: rgba(249, 115, 22, 0.15);
+    color: #fb923c;
+}
+
+.senior-card-header h4 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: white;
+    flex: 1;
+}
+
+.concern-badge {
+    font-size: 0.65rem;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    flex-shrink: 0;
+}
+
+.concern-badge.critical {
+    background: rgba(239, 68, 68, 0.15);
+    color: #f87171;
+    border: 1px solid rgba(239, 68, 68, 0.25);
+}
+
+.concern-badge.important {
+    background: rgba(245, 158, 11, 0.15);
+    color: #fbbf24;
+    border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.concern-badge.optimization {
+    background: rgba(16, 185, 129, 0.15);
+    color: #34d399;
+    border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.concern-badge.design {
+    background: rgba(99, 102, 241, 0.15);
+    color: #a5b4fc;
+    border: 1px solid rgba(99, 102, 241, 0.25);
+}
+
+.senior-card > p {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.92rem;
+    line-height: 1.75;
+    margin-bottom: 18px;
+}
+
+/* Scenario blocks inside senior cards */
+.scenario-block {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+}
+
+.scenario-block:last-child {
+    margin-bottom: 0;
+}
+
+.scenario-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.scenario-label.problem {
+    color: #f87171;
+}
+
+.scenario-label.solution {
+    color: #34d399;
+}
+
+.scenario-label.pattern {
+    color: #60a5fa;
+}
+
+.scenario-label.tradeoff {
+    color: #fbbf24;
+}
+
+.scenario-block p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.87rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.scenario-block code {
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-size: 0.78rem;
+    background: rgba(99, 102, 241, 0.12);
+    color: #a5b4fc;
+    padding: 2px 8px;
+    border-radius: 4px;
+    border: 1px solid rgba(99, 102, 241, 0.15);
+}
+
+/* Code blocks inside senior cards */
+.senior-code-block {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 16px;
+    overflow-x: auto;
+}
+
+.senior-code-block pre {
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-size: 0.78rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+    white-space: pre;
+}
+
+.senior-code-block pre .comment {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.senior-code-block pre .keyword {
+    color: #c084fc;
+}
+
+.senior-code-block pre .string {
+    color: #34d399;
+}
+
+.senior-code-block pre .function {
+    color: #fbbf24;
+}
+
+.senior-code-block pre .type {
+    color: #60a5fa;
+}
+
+.senior-code-block pre .constant {
+    color: #f87171;
+}
+
+/* Takeaway inside senior cards */
+.senior-takeaway {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 16px;
+    background: rgba(16, 185, 129, 0.06);
+    border: 1px solid rgba(16, 185, 129, 0.15);
+    border-radius: 8px;
+    margin-top: 16px;
+}
+
+.senior-takeaway i {
+    color: #34d399;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.senior-takeaway span {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #34d399;
+    line-height: 1.5;
+}
+
+/* --------------------------------
+   DATABASE DESIGN SECTION
+   -------------------------------- */
+.db-design {
+    padding: 80px 0;
+}
+
+.db-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.db-table-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.db-table-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+.db-table-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 20px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+}
+
+.db-table-header i {
+    font-size: 1.1rem;
+}
+
+.db-table-header h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: white;
+}
+
+.db-table-body {
+    padding: 16px 20px;
+}
+
+.db-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.db-field {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.82rem;
+    padding: 7px 10px;
+    background: var(--bg-primary);
+    border-radius: 6px;
+    color: var(--text-secondary);
+}
+
+.db-field .field-name {
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-size: 0.78rem;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.db-field .field-type {
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-size: 0.68rem;
+    color: var(--text-muted);
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+.field-key {
+    font-size: 0.58rem;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    flex-shrink: 0;
+}
+
+.field-key.pk {
+    background: rgba(99, 102, 241, 0.15);
+    color: var(--primary-color);
+}
+
+.field-key.fk {
+    background: rgba(245, 158, 11, 0.15);
+    color: #f59e0b;
+}
+
+.field-key.idx {
+    background: rgba(16, 185, 129, 0.15);
+    color: var(--success-color);
+}
+
+.field-key.uq {
+    background: rgba(168, 85, 247, 0.15);
+    color: #a855f7;
+}
+
+.db-relationships {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.db-relationships span {
+    font-size: 0.73rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.db-relationships span i {
+    color: #f59e0b;
+    font-size: 0.65rem;
+}
+
+/* DB Design Principles */
+.db-principles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.db-principle {
+    padding: 20px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.db-principle:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.db-principle i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    display: block;
+}
+
+.db-principle h5 {
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    margin-bottom: 6px;
+}
+
+.db-principle p {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* --------------------------------
+   RESPONSIVE - KEMFOOD SPECIFIC
+   -------------------------------- */
+@media (max-width: 1024px) {
+    .domain-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .db-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .db-principles {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .senior-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .senior-card.full-width {
+        grid-column: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .state-machine {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .state-node {
+        min-width: auto;
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .state-arrow {
+        transform: rotate(90deg);
+    }
+
+    .domain-grid,
+    .patterns-grid,
+    .db-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .db-principles {
+        grid-template-columns: 1fr;
+    }
+
+    .tenant-layer {
+        padding: 20px;
+    }
+
+    .tenant-endpoints {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .senior-card {
+        padding: 24px;
+    }
+
+    .senior-code-block pre {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .senior-card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .concern-badge {
+        align-self: flex-start;
+    }
+}
+
