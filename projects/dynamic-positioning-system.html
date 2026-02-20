@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dynamic Positioning System - Autonomous vessel station-keeping system using advanced control algorithms and thruster management">
+    <title>Dynamic Positioning System | Mochamad Teguh Subarkah</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/project-detail.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">MT<span class="accent">S</span></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../index.html#about" class="nav-link">About</a></li>
+                <li><a href="../index.html#experience" class="nav-link">Experience</a></li>
+                <li><a href="../index.html#projects" class="nav-link active">Projects</a></li>
+                <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero dps-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="../index.html#projects">Projects</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Dynamic Positioning System</span>
+            </div>
+            
+            <div class="project-hero-content">
+                <div class="project-hero-text">
+                    <div class="project-category-badge">
+                        <i class="fas fa-ship"></i> Marine Technology / Control Systems
+                    </div>
+                    <h1>Dynamic Positioning System</h1>
+                    <p class="project-tagline">
+                        Autonomous vessel station-keeping system that maintains position 
+                        and heading using GPS, environmental sensors, and advanced control 
+                        algorithms driving multiple thrusters
+                    </p>
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-building"></i>
+                            <span>Syergie IndoPrima</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>2017 – 2020</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-user-tie"></i>
+                            <span>Control System Engineer</span>
+                        </div>
+                        <div class="meta-item status-deployed">
+                            <i class="fas fa-anchor"></i>
+                            <span>Deployed on Vessels</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">4</div>
+                        <div class="hero-stat-label">Control Algorithms</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">3 DOF</div>
+                        <div class="hero-stat-label">Surge, Sway, Yaw</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">Full</div>
+                        <div class="hero-stat-label">Scale Deployment</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">550 HP</div>
+                        <div class="hero-stat-label">Propulsion Power</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Overview Visual -->
+    <section class="project-showcase dps-showcase">
+        <div class="container">
+            <div class="dps-architecture-visual">
+                <div class="flow-header">
+                    <h3>How Dynamic Positioning Works</h3>
+                    <p>The system autonomously maintains vessel position and heading using sensor feedback and thruster control</p>
+                </div>
+                
+                <div class="dps-flow">
+                    <!-- Sensors -->
+                    <div class="dps-flow-group">
+                        <h4 class="flow-group-title">Sensors</h4>
+                        <div class="dps-flow-items">
+                            <div class="flow-chip">
+                                <i class="fas fa-satellite"></i>
+                                <span>GPS</span>
+                            </div>
+                            <div class="flow-chip">
+                                <i class="fas fa-compass"></i>
+                                <span>Compass / Gyro</span>
+                            </div>
+                            <div class="flow-chip">
+                                <i class="fas fa-wind"></i>
+                                <span>Anemometer</span>
+                            </div>
+                            <div class="flow-chip">
+                                <i class="fas fa-gamepad"></i>
+                                <span>Operator Input</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dps-flow-arrow">
+                        <i class="fas fa-arrow-down"></i>
+                    </div>
+
+                    <!-- DP Computer -->
+                    <div class="dps-flow-group highlight">
+                        <h4 class="flow-group-title">DP Computer</h4>
+                        <div class="dps-flow-items compact">
+                            <div class="flow-chip primary">
+                                <i class="fas fa-filter"></i>
+                                <span>State Estimator</span>
+                            </div>
+                            <div class="flow-chip primary">
+                                <i class="fas fa-sliders-h"></i>
+                                <span>Feedback Controller</span>
+                            </div>
+                            <div class="flow-chip primary">
+                                <i class="fas fa-wind"></i>
+                                <span>Wind Feedforward</span>
+                            </div>
+                            <div class="flow-chip primary">
+                                <i class="fas fa-project-diagram"></i>
+                                <span>Control Allocation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dps-flow-arrow">
+                        <i class="fas fa-arrow-down"></i>
+                    </div>
+
+                    <!-- Actuators -->
+                    <div class="dps-flow-group">
+                        <h4 class="flow-group-title">Actuators</h4>
+                        <div class="dps-flow-items">
+                            <div class="flow-chip">
+                                <i class="fas fa-fan"></i>
+                                <span>Azimuth Thrusters</span>
+                            </div>
+                            <div class="flow-chip">
+                                <i class="fas fa-cog"></i>
+                                <span>Propeller RPM</span>
+                            </div>
+                            <div class="flow-chip">
+                                <i class="fas fa-sync-alt"></i>
+                                <span>Azimuth Angle (360°)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-overview">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-main">
+                    <h2>Project Overview</h2>
+                    <p>
+                        A Dynamic Positioning System (DPS) is an advanced marine control system that 
+                        automatically maintains a vessel's position and heading using its own thrusters, 
+                        without the need for anchors or mooring lines. The system continuously receives 
+                        data from GPS, compass, gyroscopes, anemometers, and other environmental sensors, 
+                        processes it through sophisticated control algorithms in a DP computer, and 
+                        generates real-time commands for each thruster.
+                    </p>
+                    <p>
+                        As the Control System Engineer, I was responsible for the complete development 
+                        of both the DP Software and DP Monitoring Software — from mathematical modeling 
+                        and control algorithm design to software implementation and full-scale vessel 
+                        deployment. The project involved computational fluid dynamics (CFD) for vessel 
+                        modeling, implementation of multiple advanced control algorithms (PD, LQR, 
+                        Sliding Mode, MPC), and real-time embedded system programming.
+                    </p>
+                    <p>
+                        The system was successfully deployed on multiple submarine cable laying vessels, 
+                        enabling precise station-keeping during critical cable installation operations 
+                        where positioning accuracy is paramount.
+                    </p>
+                    
+                    <div class="overview-highlights">
+                        <div class="highlight-box">
+                            <i class="fas fa-bullseye"></i>
+                            <div>
+                                <h4>Problem Solved</h4>
+                                <p>Maintaining precise vessel position during submarine cable operations where anchor-based positioning is impossible</p>
+                            </div>
+                        </div>
+                        <div class="highlight-box">
+                            <i class="fas fa-cogs"></i>
+                            <div>
+                                <h4>Engineering Scope</h4>
+                                <p>Full-stack control systems: mathematical modeling, CFD simulation, algorithm design, software development, and field deployment</p>
+                            </div>
+                        </div>
+                        <div class="highlight-box">
+                            <i class="fas fa-anchor"></i>
+                            <div>
+                                <h4>Deployment</h4>
+                                <p>Successfully deployed on full-scale vessels for submarine cable projects in Indonesian waters</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="overview-sidebar">
+                    <div class="sidebar-card">
+                        <h4><i class="fas fa-tools"></i> My Role</h4>
+                        <ul class="role-list">
+                            <li>Vessel Mathematical Modeling</li>
+                            <li>CFD Simulation (Added Mass, Drag)</li>
+                            <li>Control Algorithm Design</li>
+                            <li>State Estimator Implementation</li>
+                            <li>DP Software Development</li>
+                            <li>DP Monitoring Software</li>
+                            <li>Thruster Controller Design</li>
+                            <li>MATLAB/Simulink Simulation</li>
+                            <li>Full-Scale Vessel Deployment</li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-card">
+                        <h4><i class="fas fa-flask"></i> Research Paper</h4>
+                        <div class="blog-link">
+                            <a href="https://teguhsubarkahnet.wordpress.com/2020/06/14/example-post-3/" target="_blank" class="sidebar-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Read Full Technical Blog</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DP Software Features -->
+    <section class="project-features">
+        <div class="container">
+            <div class="section-header">
+                <h2>DP Software Features</h2>
+                <p>Complete vessel control and monitoring interface</p>
+            </div>
+
+            <div class="feature-card-grid three-col">
+                <div class="feature-card-large">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Position & Navigation Display</h3>
+                    <p>
+                        Real-time vessel position and heading on interactive map with numeric 
+                        latitude/longitude in both Decimal and Degree-Minute-Second formats. 
+                        Includes GPS signal strength indicator.
+                    </p>
+                    <div class="feature-tags">
+                        <span class="tag">Map View</span>
+                        <span class="tag">Lat/Lon Display</span>
+                        <span class="tag">GPS Signal Bar</span>
+                        <span class="tag">Heading Indicator</span>
+                    </div>
+                </div>
+
+                <div class="feature-card-large">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3>Environmental Monitoring</h3>
+                    <p>
+                        Wind speed and direction display in both body-fixed and earth-fixed 
+                        reference frames. Vessel speed (SoG) in knots and m/s, heading, 
+                        and Rate of Turn (RoT) monitoring.
+                    </p>
+                    <div class="feature-tags">
+                        <span class="tag">Wind Data</span>
+                        <span class="tag">SoG / Heading</span>
+                        <span class="tag">Rate of Turn</span>
+                        <span class="tag">Body & Earth Frame</span>
+                    </div>
+                </div>
+
+                <div class="feature-card-large">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <h3>Control System Interface</h3>
+                    <p>
+                        Displays active thruster status, control mode, and DP behavior. 
+                        Station keeping mimic diagram for visual feedback. Configurable 
+                        control parameters via Control Tune-up menu.
+                    </p>
+                    <div class="feature-tags">
+                        <span class="tag">Station Keeping Mimic</span>
+                        <span class="tag">Control Tune-up</span>
+                        <span class="tag">Mode Selection</span>
+                        <span class="tag">Thruster Status</span>
+                    </div>
+                </div>
+
+                <div class="feature-card-large">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>Mission Planning</h3>
+                    <p>
+                        Configurable waypoint and mission modes. Cable route position list (RPL) 
+                        management for submarine cable projects with cable break location display.
+                    </p>
+                    <div class="feature-tags">
+                        <span class="tag">Waypoint Mode</span>
+                        <span class="tag">Mission Mode</span>
+                        <span class="tag">Cable RPL</span>
+                        <span class="tag">Break Location</span>
+                    </div>
+                </div>
+
+                <div class="feature-card-large">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-vial"></i>
+                    </div>
+                    <h3>Simulation Environment</h3>
+                    <p>
+                        Built-in HILS (Hardware-In-the-Loop) and SILS (Software-In-the-Loop) 
+                        simulation for testing control algorithms and system behavior 
+                        before deployment.
+                    </p>
+                    <div class="feature-tags">
+                        <span class="tag">HILS</span>
+                        <span class="tag">SILS</span>
+                        <span class="tag">Control Testing</span>
+                        <span class="tag">Gain Tuning</span>
+                    </div>
+                </div>
+
+                <div class="feature-card-large">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Data Logging & Monitoring</h3>
+                    <p>
+                        Comprehensive data logging of vessel position, speed, environment info, 
+                        control signals, and thruster behavior. DP Monitoring software tracks 
+                        engine RPM, temperature, fuel, and thruster connectivity.
+                    </p>
+                    <div class="feature-tags">
+                        <span class="tag">Data Logger</span>
+                        <span class="tag">Engine Monitor</span>
+                        <span class="tag">Thruster RPM</span>
+                        <span class="tag">Connectivity</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Control System Deep Dive -->
+    <section class="control-system-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Control System Architecture</h2>
+                <p>Multi-layered control approach for robust autonomous positioning</p>
+            </div>
+
+            <!-- Control Pipeline -->
+            <div class="control-pipeline">
+                <div class="pipeline-step">
+                    <div class="pipeline-number">1</div>
+                    <div class="pipeline-content">
+                        <h4><i class="fas fa-filter"></i> State Estimation</h4>
+                        <p>
+                            Nonlinear observer filters noisy GPS and compass signals, estimates 
+                            environmental bias, and performs wave-motion filtering to provide 
+                            clean state feedback for the controller.
+                        </p>
+                        <div class="pipeline-detail">
+                            <span><i class="fas fa-check-circle"></i> Noise elimination</span>
+                            <span><i class="fas fa-check-circle"></i> Wave filtering</span>
+                            <span><i class="fas fa-check-circle"></i> Bias estimation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pipeline-step">
+                    <div class="pipeline-number">2</div>
+                    <div class="pipeline-content">
+                        <h4><i class="fas fa-sliders-h"></i> Feedback Control</h4>
+                        <p>
+                            Multiple control algorithms implemented and tested. Linear controllers 
+                            (PD, LQR) for basic operation, nonlinear controllers (Sliding Mode, MPC) 
+                            for robust performance under varying sea conditions.
+                        </p>
+                        <div class="controller-chips">
+                            <div class="controller-chip">
+                                <span class="chip-name">PD</span>
+                                <span class="chip-desc">Proportional-Derivative</span>
+                            </div>
+                            <div class="controller-chip">
+                                <span class="chip-name">LQR</span>
+                                <span class="chip-desc">Linear Quadratic Regulator</span>
+                            </div>
+                            <div class="controller-chip">
+                                <span class="chip-name">SMC</span>
+                                <span class="chip-desc">Sliding Mode Control</span>
+                            </div>
+                            <div class="controller-chip">
+                                <span class="chip-name">MPC</span>
+                                <span class="chip-desc">Model Predictive Control</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pipeline-step">
+                    <div class="pipeline-number">3</div>
+                    <div class="pipeline-content">
+                        <h4><i class="fas fa-wind"></i> Wind Feedforward</h4>
+                        <p>
+                            Proactive wind compensation before the vessel deviates. Receives 
+                            real-time anemometer data, calculates wind force and moment, 
+                            and generates feedforward signals to counteract disturbances.
+                        </p>
+                        <div class="pipeline-detail">
+                            <span><i class="fas fa-check-circle"></i> Proactive compensation</span>
+                            <span><i class="fas fa-check-circle"></i> Force/moment calculation</span>
+                            <span><i class="fas fa-check-circle"></i> Disturbance rejection</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pipeline-step">
+                    <div class="pipeline-number">4</div>
+                    <div class="pipeline-content">
+                        <h4><i class="fas fa-project-diagram"></i> Control Allocation</h4>
+                        <p>
+                            Converts control signals to individual thruster commands (RPM + azimuth angle) 
+                            using pseudo-inverse transformation matrices. Thrust-to-RPM relationship 
+                            calibrated through bollard pull tests.
+                        </p>
+                        <div class="pipeline-detail">
+                            <span><i class="fas fa-check-circle"></i> Pseudo-inverse allocation</span>
+                            <span><i class="fas fa-check-circle"></i> Bollard pull calibration</span>
+                            <span><i class="fas fa-check-circle"></i> RPM + Azimuth commands</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pipeline-step">
+                    <div class="pipeline-number">5</div>
+                    <div class="pipeline-content">
+                        <h4><i class="fas fa-fan"></i> Thruster Control</h4>
+                        <p>
+                            Azimuth thrusters with 360° thrust vectoring. Hydraulic drive (~550 HP diesel) 
+                            for propeller speed via swash plate axial pump. Induction motor with 
+                            VFD-based position control for azimuth angle.
+                        </p>
+                        <div class="pipeline-detail">
+                            <span><i class="fas fa-check-circle"></i> 360° azimuth</span>
+                            <span><i class="fas fa-check-circle"></i> Hydraulic RPM control</span>
+                            <span><i class="fas fa-check-circle"></i> VFD azimuth positioning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vessel Modeling -->
+    <section class="vessel-modeling">
+        <div class="container">
+            <div class="section-header">
+                <h2>Vessel Modeling & Simulation</h2>
+                <p>Computational Fluid Dynamics for accurate vessel dynamics</p>
+            </div>
+
+            <div class="modeling-grid">
+                <div class="modeling-card">
+                    <div class="modeling-icon">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <h4>CAD Design</h4>
+                    <p>
+                        3D vessel hull modeling for CFD simulation in surge, sway, and yaw 
+                        directions. Accurate geometry representation for hydrodynamic analysis.
+                    </p>
+                </div>
+
+                <div class="modeling-card">
+                    <div class="modeling-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h4>Drag Simulation</h4>
+                    <p>
+                        3D CFD simulation with speed variation to determine linear and 
+                        nonlinear drag coefficients for the vessel dynamics model.
+                    </p>
+                </div>
+
+                <div class="modeling-card">
+                    <div class="modeling-icon">
+                        <i class="fas fa-wave-square"></i>
+                    </div>
+                    <h4>Added Mass Simulation</h4>
+                    <p>
+                        2D CFD analysis with speed variation to determine added mass 
+                        coefficients representing fluid inertia effects on vessel motion.
+                    </p>
+                </div>
+
+                <div class="modeling-card">
+                    <div class="modeling-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h4>Data Regression</h4>
+                    <p>
+                        Statistical regression of CFD results to extract hydrodynamic 
+                        parameters for the vessel mathematical model used in control design.
+                    </p>
+                </div>
+
+                <div class="modeling-card">
+                    <div class="modeling-icon">
+                        <i class="fas fa-square-root-alt"></i>
+                    </div>
+                    <h4>Vessel Dynamics</h4>
+                    <p>
+                        3-DOF mathematical model incorporating rigid body dynamics, added mass, 
+                        and linear/nonlinear drag for surge, sway, and yaw.
+                    </p>
+                </div>
+
+                <div class="modeling-card">
+                    <div class="modeling-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h4>SIMULINK Simulation</h4>
+                    <p>
+                        Model-in-the-Loop (MIL) simulation in MATLAB/Simulink for control 
+                        gain tuning and system behavior verification before deployment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="project-tech-stack">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technology Stack</h2>
+                <p>Hardware and software powering the Dynamic Positioning System</p>
+            </div>
+            
+            <div class="tech-stack-container">
+                <div class="tech-stack-category">
+                    <h4><i class="fas fa-code"></i> Software</h4>
+                    <div class="tech-stack-items">
+                        <div class="tech-stack-item">
+                            <i class="fas fa-code"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">C/C++</span>
+                                <span class="tech-desc">DP Software & Embedded Control</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fab fa-python"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">Python</span>
+                                <span class="tech-desc">Data Analysis & Simulation</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fas fa-laptop-code"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">MATLAB / Simulink</span>
+                                <span class="tech-desc">Modeling & MIL Simulation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-stack-category">
+                    <h4><i class="fas fa-brain"></i> Control Algorithms</h4>
+                    <div class="tech-stack-items">
+                        <div class="tech-stack-item">
+                            <i class="fas fa-sliders-h"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">PD / LQR</span>
+                                <span class="tech-desc">Linear Feedback Controllers</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fas fa-bolt"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">Sliding Mode Control</span>
+                                <span class="tech-desc">Nonlinear Robust Control</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fas fa-chart-line"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">Model Predictive Control</span>
+                                <span class="tech-desc">Optimal Predictive Control</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-stack-category">
+                    <h4><i class="fas fa-satellite-dish"></i> Sensors</h4>
+                    <div class="tech-stack-items">
+                        <div class="tech-stack-item">
+                            <i class="fas fa-satellite"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">DGPS</span>
+                                <span class="tech-desc">Position Reference</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fas fa-compass"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">Gyrocompass</span>
+                                <span class="tech-desc">Heading Reference</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fas fa-wind"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">Anemometer</span>
+                                <span class="tech-desc">Wind Speed & Direction</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-stack-category">
+                    <h4><i class="fas fa-cogs"></i> Hardware</h4>
+                    <div class="tech-stack-items">
+                        <div class="tech-stack-item">
+                            <i class="fas fa-fan"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">Azimuth Thrusters</span>
+                                <span class="tech-desc">360° Thrust Vectoring</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fas fa-oil-can"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">Hydraulic Drive</span>
+                                <span class="tech-desc">~550 HP Diesel / Swash Plate Pump</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fas fa-bolt"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">VFD / Induction Motor</span>
+                                <span class="tech-desc">Azimuth Position Control</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="project-gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Project Gallery</h2>
+                <p>From simulation to real-world deployment</p>
+            </div>
+
+            <div class="gallery-categories">
+                <div class="gallery-category">
+                    <h4><i class="fas fa-desktop"></i> Software</h4>
+                    <div class="gallery-row">
+                        <div class="gallery-item">
+                            <img src="../assets/projects/dps/dp-software.jpg" alt="DP Software Interface">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4>DP Software Interface</h4>
+                                    <p>Main control and monitoring dashboard</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="../assets/projects/dps/dp-monitoring.jpg" alt="DP Monitoring Software">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4>DP Monitoring Software</h4>
+                                    <p>Thruster and engine monitoring</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-category">
+                    <h4><i class="fas fa-chart-line"></i> Control Performance</h4>
+                    <div class="gallery-row">
+                        <div class="gallery-item">
+                            <img src="../assets/projects/dps/surge-error.jpg" alt="Surge Error Performance">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4>Surge Error Comparison</h4>
+                                    <p>PD vs LQR vs SMC vs MPC</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="../assets/projects/dps/sway-error.jpg" alt="Sway Error Performance">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4>Sway Error Comparison</h4>
+                                    <p>Controller performance analysis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="../assets/projects/dps/heading-error.jpg" alt="Heading Error Performance">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4>Heading Error</h4>
+                                    <p>Yaw control accuracy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-category">
+                    <h4><i class="fas fa-ship"></i> Field Deployment</h4>
+                    <div class="gallery-row">
+                        <div class="gallery-item">
+                            <img src="../assets/projects/dps/dp-vessel.jpg" alt="DP Vessel">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4>DP Vessel</h4>
+                                    <p>Full-scale deployment vessel</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="../assets/projects/dps/thruster.jpg" alt="Azimuth Thruster">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4>Azimuth Thruster</h4>
+                                    <p>360° thrust vectoring hardware</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="../assets/projects/dps/dp-setup.jpg" alt="DP Engineer Setup">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4>System Setup</h4>
+                                    <p>Engineer configuring DP on vessel</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges & Solutions -->
+    <section class="project-challenges">
+        <div class="container">
+            <div class="section-header">
+                <h2>Challenges & Solutions</h2>
+                <p>Engineering obstacles overcome in building a production DP system</p>
+            </div>
+
+            <div class="challenges-grid">
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-icon problem"><i class="fas fa-exclamation-triangle"></i></div>
+                        <h4>Challenge</h4>
+                    </div>
+                    <h5>Noisy Sensor Signals</h5>
+                    <p>
+                        GPS and compass signals contain significant noise that causes erratic 
+                        control signals and potential actuator damage if fed directly to controllers.
+                    </p>
+                    <div class="solution-header">
+                        <div class="challenge-icon solution"><i class="fas fa-lightbulb"></i></div>
+                        <h4>Solution</h4>
+                    </div>
+                    <p>
+                        Implemented nonlinear observer for state estimation with wave-motion 
+                        filtering and environmental bias estimation, providing clean signals 
+                        for feedback control.
+                    </p>
+                    <div class="solution-result">
+                        <i class="fas fa-check"></i>
+                        <span>Clean state feedback without actuator damage</span>
+                    </div>
+                </div>
+
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-icon problem"><i class="fas fa-exclamation-triangle"></i></div>
+                        <h4>Challenge</h4>
+                    </div>
+                    <h5>Vessel Nonlinearity & Environmental Disturbances</h5>
+                    <p>
+                        Vessel dynamics are inherently nonlinear, and sea conditions (wind, waves, current) 
+                        constantly change, making linear controllers insufficient.
+                    </p>
+                    <div class="solution-header">
+                        <div class="challenge-icon solution"><i class="fas fa-lightbulb"></i></div>
+                        <h4>Solution</h4>
+                    </div>
+                    <p>
+                        Implemented multiple nonlinear controllers (Sliding Mode, MPC) with wind 
+                        feedforward compensation. CFD-based vessel modeling provided accurate 
+                        dynamics for controller design.
+                    </p>
+                    <div class="solution-result">
+                        <i class="fas fa-check"></i>
+                        <span>Robust positioning under varying sea conditions</span>
+                    </div>
+                </div>
+
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-icon problem"><i class="fas fa-exclamation-triangle"></i></div>
+                        <h4>Challenge</h4>
+                    </div>
+                    <h5>Thruster-to-RPM Calibration</h5>
+                    <p>
+                        Converting desired thrust force to actual propeller RPM commands requires 
+                        accurate characterization of the thruster's nonlinear thrust curve.
+                    </p>
+                    <div class="solution-header">
+                        <div class="challenge-icon solution"><i class="fas fa-lightbulb"></i></div>
+                        <h4>Solution</h4>
+                    </div>
+                    <p>
+                        Conducted bollard pull tests at various RPMs to map thrust-to-RPM 
+                        relationship. Used regression analysis to create accurate lookup 
+                        tables for real-time control allocation.
+                    </p>
+                    <div class="solution-result">
+                        <i class="fas fa-check"></i>
+                        <span>Accurate thrust delivery from RPM commands</span>
+                    </div>
+                </div>
+
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-icon problem"><i class="fas fa-exclamation-triangle"></i></div>
+                        <h4>Challenge</h4>
+                    </div>
+                    <h5>Azimuth Motor Oscillation</h5>
+                    <p>
+                        Using contactors for azimuth motor control caused oscillation and potential 
+                        damage to the actuator and relay systems.
+                    </p>
+                    <div class="solution-header">
+                        <div class="challenge-icon solution"><i class="fas fa-lightbulb"></i></div>
+                        <h4>Solution</h4>
+                    </div>
+                    <p>
+                        Designed custom VFD (Variable Frequency Drive) with PID position control 
+                        for the induction motor azimuth system, eliminating oscillation and 
+                        providing smooth, precise angular positioning.
+                    </p>
+                    <div class="solution-result">
+                        <i class="fas fa-check"></i>
+                        <span>Smooth 360° azimuth control without oscillation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results & Impact -->
+    <section class="project-results">
+        <div class="container">
+            <div class="section-header light">
+                <h2>Results & Impact</h2>
+                <p>From simulation to real-world vessel deployment</p>
+            </div>
+
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-icon"><i class="fas fa-ship"></i></div>
+                    <div class="result-number">Full Scale</div>
+                    <div class="result-label">Vessel Deployment</div>
+                    <p>Successfully deployed on operational vessels</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon"><i class="fas fa-brain"></i></div>
+                    <div class="result-number">4</div>
+                    <div class="result-label">Controllers Tested</div>
+                    <p>PD, LQR, Sliding Mode, MPC compared</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon"><i class="fas fa-anchor"></i></div>
+                    <div class="result-number">3 DOF</div>
+                    <div class="result-label">Control Axes</div>
+                    <p>Surge, sway, and yaw station-keeping</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon"><i class="fas fa-cog"></i></div>
+                    <div class="result-number">550 HP</div>
+                    <div class="result-label">Propulsion Power</div>
+                    <p>Hydraulic thruster drive system</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon"><i class="fas fa-water"></i></div>
+                    <div class="result-number">CFD</div>
+                    <div class="result-label">Based Modeling</div>
+                    <p>Accurate hydrodynamic coefficients</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon"><i class="fas fa-cable-car"></i></div>
+                    <div class="result-number">Cable</div>
+                    <div class="result-label">Projects Supported</div>
+                    <p>Submarine cable installation operations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contributions -->
+    <section class="project-contributions">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Contributions</h2>
+                <p>End-to-end control systems engineering</p>
+            </div>
+
+            <div class="contributions-grid">
+                <div class="contribution-card">
+                    <div class="contribution-icon"><i class="fas fa-square-root-alt"></i></div>
+                    <h4>Mathematical Modeling</h4>
+                    <p>Developed 3-DOF vessel dynamics model with CFD-derived hydrodynamic coefficients for added mass and drag.</p>
+                </div>
+                <div class="contribution-card">
+                    <div class="contribution-icon"><i class="fas fa-water"></i></div>
+                    <h4>CFD Simulation</h4>
+                    <p>Conducted computational fluid dynamics analysis for vessel hull, including drag and added mass simulations with data regression.</p>
+                </div>
+                <div class="contribution-card">
+                    <div class="contribution-icon"><i class="fas fa-brain"></i></div>
+                    <h4>Control Algorithm Design</h4>
+                    <p>Designed and implemented 4 control algorithms (PD, LQR, SMC, MPC) with nonlinear observer state estimation.</p>
+                </div>
+                <div class="contribution-card">
+                    <div class="contribution-icon"><i class="fas fa-code"></i></div>
+                    <h4>DP Software Development</h4>
+                    <p>Built complete DP software in C/C++ with map display, sensor interfaces, control UI, and data logging.</p>
+                </div>
+                <div class="contribution-card">
+                    <div class="contribution-icon"><i class="fas fa-bolt"></i></div>
+                    <h4>Thruster Controller</h4>
+                    <p>Designed hydraulic RPM control and VFD-based azimuth positioning system for the propulsion hardware.</p>
+                </div>
+                <div class="contribution-card">
+                    <div class="contribution-icon"><i class="fas fa-ship"></i></div>
+                    <h4>Field Deployment</h4>
+                    <p>Deployed and commissioned the system on full-scale vessels for submarine cable installation projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Takeaways -->
+    <section class="project-lessons">
+        <div class="container">
+            <div class="section-header">
+                <h2>Key Takeaways</h2>
+                <p>Lessons from building a production dynamic positioning system</p>
+            </div>
+
+            <div class="lessons-grid">
+                <div class="lesson-card">
+                    <span class="lesson-number">01</span>
+                    <h4>Simulation Before Deployment Saves Everything</h4>
+                    <p>
+                        MATLAB/Simulink simulation (MIL-S) was invaluable for tuning control gains 
+                        and identifying edge cases before putting the system on a real vessel. 
+                        Field debugging is expensive and dangerous.
+                    </p>
+                </div>
+                <div class="lesson-card">
+                    <span class="lesson-number">02</span>
+                    <h4>State Estimation is as Important as Control</h4>
+                    <p>
+                        A perfect controller with noisy input produces terrible results. 
+                        The nonlinear observer for noise filtering was crucial — without it, 
+                        the thrusters would oscillate and damage mechanical components.
+                    </p>
+                </div>
+                <div class="lesson-card">
+                    <span class="lesson-number">03</span>
+                    <h4>Theory vs Reality Always Has a Gap</h4>
+                    <p>
+                        MPC should theoretically outperform other controllers, but gain tuning 
+                        in real-world conditions with model uncertainty remained challenging. 
+                        Practical robustness matters more than theoretical optimality.
+                    </p>
+                </div>
+                <div class="lesson-card">
+                    <span class="lesson-number">04</span>
+                    <h4>Hardware-Software Integration is an Art</h4>
+                    <p>
+                        Bridging the gap between control algorithms and physical hardware 
+                        (hydraulic pumps, VFDs, induction motors) requires understanding both 
+                        domains deeply. Pure software or pure hardware expertise isn't enough.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="project-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Interested in Control Systems or Marine Tech?</h2>
+                <p>
+                    I combine deep control systems engineering with full-stack software development. 
+                    Let's discuss how I can help with your project.
+                </p>
+                <div class="cta-buttons">
+                    <a href="../index.html#contact" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Get In Touch
+                    </a>
+                    <a href="https://teguhsubarkahnet.wordpress.com/2020/06/14/example-post-3/" target="_blank" class="btn btn-secondary">
+                        <i class="fas fa-blog"></i> Read Technical Blog
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Navigation -->
+    <section class="project-navigation">
+        <div class="container">
+            <div class="nav-grid">
+                <a href="cable-management-system.html" class="nav-item prev">
+                    <span class="nav-label"><i class="fas fa-arrow-left"></i> Previous Project</span>
+                    <span class="nav-title">Cable Management System</span>
+                </a>
+                <a href="kemfood-pos.html" class="nav-item next">
+                    <span class="nav-label">Next Project <i class="fas fa-arrow-right"></i></span>
+                    <span class="nav-title">KEMFOOD POS Application</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mochamad Teguh Subarkah. Built with <i class="fas fa-heart"></i> using HTML, CSS & JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="../js/project-detail.js"></script>
+</body>
+</html>
