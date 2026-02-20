@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AIS Monitoring System - Real-time vessel tracking platform for submarine cable protection">
+    <title>AIS Monitoring System | Mochamad Teguh Subarkah</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/project-detail.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">MT<span class="accent">S</span></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../index.html#about" class="nav-link">About</a></li>
+                <li><a href="../index.html#experience" class="nav-link">Experience</a></li>
+                <li><a href="../index.html#projects" class="nav-link active">Projects</a></li>
+                <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="../index.html#projects">Projects</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>AIS Monitoring System</span>
+            </div>
+            
+            <div class="project-hero-content">
+                <div class="project-hero-text">
+                    <div class="project-category-badge">
+                        <i class="fas fa-ship"></i> Marine Technology
+                    </div>
+                    <h1>AIS Monitoring System</h1>
+                    <p class="project-tagline">
+                        Real-time vessel tracking and submarine cable protection platform
+                    </p>
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-building"></i>
+                            <span>PT. Lagadi</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Oct 2024 - Present</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-user-tie"></i>
+                            <span>Lead Developer</span>
+                        </div>
+                        <div class="meta-item status-live">
+                            <span class="pulse"></span>
+                            <span>Live 24/7</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">99.9%</div>
+                        <div class="hero-stat-label">Uptime SLA</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">8</div>
+                        <div class="hero-stat-label">AIS Stations</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">50K+</div>
+                        <div class="hero-stat-label">Daily Positions</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">24/7</div>
+                        <div class="hero-stat-label">Monitoring</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Showcase -->
+    <section class="project-showcase">
+        <div class="container">
+            <div class="showcase-main-image">
+                <img src="../assets/projects/vms/vms-map.png" alt="AIS Monitoring System - Live Map">
+                <div class="image-overlay-info">
+                    <i class="fas fa-expand"></i>
+                    <span>Live Map View - Vessel Tracking Across Indonesian Waters</span>
+                </div>
+            </div>
+            <div class="showcase-gallery">
+                <div class="gallery-thumb active" data-image="../assets/projects/vms/vms-map.png">
+                    <img src="../assets/projects/vms/vms-map.png" alt="Live Map">
+                    <span>Live Map</span>
+                </div>
+                <div class="gallery-thumb" data-image="../assets/projects/vms/vms-performance.png">
+                    <img src="../assets/projects/vms/vms-performance.png" alt="Performance">
+                    <span>Performance</span>
+                </div>
+                <div class="gallery-thumb" data-image="../assets/projects/vms/vms-report.png">
+                    <img src="../assets/projects/vms/vms-report.png" alt="Reports">
+                    <span>Reports</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-overview">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-main">
+                    <h2>Project Overview</h2>
+                    <p>
+                        The AIS (Automatic Identification System) Monitoring System is an enterprise-grade 
+                        platform designed to protect submarine cable infrastructure by tracking vessel 
+                        movements in real-time across Indonesian waters. The system processes data from 
+                        8 coastal AIS stations, providing 24/7 monitoring capabilities for critical 
+                        submarine cable routes.
+                    </p>
+                    <p>
+                        As the lead developer, I architected and built the complete system from the ground up, 
+                        including backend services for real-time data ingestion, caching strategies for 
+                        high-performance queries, and an intuitive React dashboard for operators to monitor 
+                        vessel traffic and respond to potential threats to cable infrastructure.
+                    </p>
+                    <p>
+                        The platform serves as a critical tool for submarine cable operators, enabling them 
+                        to proactively identify vessels that may pose a risk to cable assets through anchoring 
+                        or fishing activities near cable routes.
+                    </p>
+                    
+                    <div class="overview-highlights">
+                        <div class="highlight-box">
+                            <i class="fas fa-bullseye"></i>
+                            <div>
+                                <h4>Problem Solved</h4>
+                                <p>Protecting submarine cables worth millions of dollars from vessel-related damage</p>
+                            </div>
+                        </div>
+                        <div class="highlight-box">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>End Users</h4>
+                                <p>Marine operators, cable maintenance teams, and management</p>
+                            </div>
+                        </div>
+                        <div class="highlight-box">
+                            <i class="fas fa-globe-asia"></i>
+                            <div>
+                                <h4>Coverage</h4>
+                                <p>Multiple regions across Eastern Indonesian waters</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="overview-sidebar">
+                    <div class="sidebar-card">
+                        <h4><i class="fas fa-tools"></i> My Role</h4>
+                        <ul class="role-list">
+                            <li>System Architecture Design</li>
+                            <li>Backend Development (Java/Python)</li>
+                            <li>Frontend Development (React)</li>
+                            <li>Database Optimization</li>
+                            <li>Real-time Data Pipeline</li>
+                            <li>Customer Requirements Gathering</li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-card">
+                        <h4><i class="fas fa-clock"></i> Timeline</h4>
+                        <div class="timeline-mini">
+                            <div class="timeline-mini-item">
+                                <span class="date">Oct 2024</span>
+                                <span class="event">Project Kickoff</span>
+                            </div>
+                            <div class="timeline-mini-item">
+                                <span class="date">Nov 2024</span>
+                                <span class="event">MVP Launch</span>
+                            </div>
+                            <div class="timeline-mini-item">
+                                <span class="date">Dec 2024</span>
+                                <span class="event">Full Production</span>
+                            </div>
+                            <div class="timeline-mini-item active">
+                                <span class="date">Present</span>
+                                <span class="event">Ongoing Operations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="project-features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Key Features</h2>
+                <p>Comprehensive vessel monitoring capabilities</p>
+            </div>
+
+            <!-- Feature 1: Live Map -->
+            <div class="feature-showcase">
+                <div class="feature-image">
+                    <img src="../assets/projects/vms/vms-map.png" alt="Real-Time Interactive Map">
+                    <div class="feature-image-badge">
+                        <i class="fas fa-map-marked-alt"></i> Core Feature
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <span class="feature-number">01</span>
+                    <h3>Real-Time Interactive Map</h3>
+                    <p>
+                        Interactive map visualization showing live vessel positions across the Indonesian 
+                        archipelago. The system displays submarine cable routes with customizable 
+                        protection zones and real-time vessel tracking with 30-second update intervals.
+                    </p>
+                    <ul class="feature-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Live Vessel Tracking</strong>
+                                <span>Position updates every 30 seconds with heading indicators</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Cable Route Visualization</strong>
+                                <span>Submarine cable paths with configurable buffer zones</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>AIS Station Coverage</strong>
+                                <span>Signal strength indicators for each receiving station</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Multi-Timezone Display</strong>
+                                <span>WIB/WITA/WIT for Indonesian operations</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Vessel Classification</strong>
+                                <span>Color-coded by type: Tanker, Cargo, Fishing, Passenger, Tug</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Feature 2: Performance Monitoring -->
+            <div class="feature-showcase reverse">
+                <div class="feature-image">
+                    <img src="../assets/projects/vms/vms-performance.png" alt="Station Performance Monitoring">
+                    <div class="feature-image-badge">
+                        <i class="fas fa-chart-line"></i> Analytics
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <span class="feature-number">02</span>
+                    <h3>Station Performance Monitoring</h3>
+                    <p>
+                        Comprehensive performance tracking for all AIS receiving stations, ensuring 
+                        maximum data availability and quick identification of connectivity issues 
+                        across the entire network.
+                    </p>
+                    <ul class="feature-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Monthly Calendar View</strong>
+                                <span>Daily uptime percentages with visual indicators</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Station-by-Station Breakdown</strong>
+                                <span>Individual metrics for Wawonii, Raha, Kendari, etc.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Visual Status Indicators</strong>
+                                <span>Green (100%), Yellow (partial), Red (critical alerts)</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Ping Performance Metrics</strong>
+                                <span>Network latency tracking and connectivity analysis</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Historical Trend Analysis</strong>
+                                <span>Long-term reliability metrics for capacity planning</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Feature 3: Reporting -->
+            <div class="feature-showcase">
+                <div class="feature-image">
+                    <img src="../assets/projects/vms/vms-report.png" alt="Comprehensive Reporting">
+                    <div class="feature-image-badge">
+                        <i class="fas fa-file-alt"></i> Reporting
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <span class="feature-number">03</span>
+                    <h3>Comprehensive Reporting System</h3>
+                    <p>
+                        Multi-format reporting capabilities for daily operations, monthly reviews, 
+                        and regulatory compliance. Reports are segmented by region and vessel type 
+                        for detailed traffic analysis.
+                    </p>
+                    <ul class="feature-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Daily Traffic Reports</strong>
+                                <span>Segment-wise vessel count breakdowns</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Monthly Summary Reports</strong>
+                                <span>Regional analysis with frequency statistics</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Ship Type Classification</strong>
+                                <span>Tanker, Passenger, Fishing, Cargo, Tug, Other categories</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Export Capabilities</strong>
+                                <span>CSV export for Excel and BI tool integration</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Alarm Reports</strong>
+                                <span>Historical log of vessels entering protected zones</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Feature 4: Alert System -->
+            <div class="feature-showcase reverse">
+                <div class="feature-image">
+                    <div class="feature-placeholder">
+                        <i class="fas fa-bell"></i>
+                        <span>Alert System Interface</span>
+                    </div>
+                    <div class="feature-image-badge">
+                        <i class="fas fa-shield-alt"></i> Safety
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <span class="feature-number">04</span>
+                    <h3>Intelligent Alert System</h3>
+                    <p>
+                        Proactive alerting mechanism to notify operators of potential threats 
+                        to submarine cable infrastructure before incidents occur, enabling 
+                        rapid response and cable protection.
+                    </p>
+                    <ul class="feature-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Geofence-Based Alerts</strong>
+                                <span>Automatic detection of vessels entering protection zones</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Anchoring Detection</strong>
+                                <span>Identifies vessels stopping near cable routes</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Station Offline Alerts</strong>
+                                <span>Configurable thresholds for downtime notifications</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Visual Map Alerts</strong>
+                                <span>Red/yellow markers for at-risk vessels</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Alarm History</strong>
+                                <span>Complete log with acknowledgment tracking</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Architecture -->
+    <section class="project-architecture">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technical Architecture</h2>
+                <p>Built for scalability, reliability, and performance</p>
+            </div>
+
+            <div class="architecture-overview">
+                <div class="arch-diagram">
+                    <div class="arch-layer">
+                        <h4>Data Sources</h4>
+                        <div class="arch-items">
+                            <div class="arch-item">
+                                <i class="fas fa-broadcast-tower"></i>
+                                <span>AIS Stations</span>
+                            </div>
+                            <div class="arch-item">
+                                <i class="fas fa-satellite-dish"></i>
+                                <span>UDP Receivers</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arch-arrow"><i class="fas fa-arrow-down"></i></div>
+                    <div class="arch-layer">
+                        <h4>Ingestion Layer</h4>
+                        <div class="arch-items">
+                            <div class="arch-item">
+                                <i class="fab fa-python"></i>
+                                <span>Python Workers</span>
+                            </div>
+                            <div class="arch-item">
+                                <i class="fas fa-stream"></i>
+                                <span>Message Queue</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arch-arrow"><i class="fas fa-arrow-down"></i></div>
+                    <div class="arch-layer">
+                        <h4>Backend Services</h4>
+                        <div class="arch-items">
+                            <div class="arch-item">
+                                <i class="fab fa-java"></i>
+                                <span>Spring Boot APIs</span>
+                            </div>
+                            <div class="arch-item">
+                                <i class="fas fa-bolt"></i>
+                                <span>Redis Cache</span>
+                            </div>
+                            <div class="arch-item">
+                                <i class="fas fa-database"></i>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arch-arrow"><i class="fas fa-arrow-down"></i></div>
+                    <div class="arch-layer">
+                        <h4>Frontend</h4>
+                        <div class="arch-items">
+                            <div class="arch-item">
+                                <i class="fab fa-react"></i>
+                                <span>React Dashboard</span>
+                            </div>
+                            <div class="arch-item">
+                                <i class="fas fa-map"></i>
+                                <span>Leaflet Maps</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-cards-grid">
+                <div class="tech-card">
+                    <div class="tech-card-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h4>Backend Services</h4>
+                    <ul>
+                        <li>Java Spring Boot for REST APIs</li>
+                        <li>Python workers for UDP data ingestion</li>
+                        <li>MVC architecture pattern</li>
+                        <li>Async processing for heavy tasks</li>
+                    </ul>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-card-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h4>Data Layer</h4>
+                    <ul>
+                        <li>PostgreSQL for persistent storage</li>
+                        <li>Redis for caching & session management</li>
+                        <li>Optimized indexing strategies</li>
+                        <li>Partitioned tables for time-series data</li>
+                    </ul>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-card-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h4>Frontend</h4>
+                    <ul>
+                        <li>React.js with modern hooks</li>
+                        <li>Leaflet.js for map visualization</li>
+                        <li>Real-time updates via polling/WebSocket</li>
+                        <li>Responsive design for control rooms</li>
+                    </ul>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-card-icon">
+                        <i class="fas fa-network-wired"></i>
+                                        <div class="tech-card">
+                    <div class="tech-card-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h4>Data Ingestion</h4>
+                    <ul>
+                        <li>UDP listener for AIS NMEA messages</li>
+                        <li>Message parsing and validation</li>
+                        <li>Data normalization pipeline</li>
+                        <li>Fault-tolerant queue processing</li>
+                    </ul>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-card-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h4>Performance</h4>
+                    <ul>
+                        <li>Multi-layer caching strategy</li>
+                        <li>Query optimization for reports</li>
+                        <li>Connection pooling</li>
+                        <li>Batch processing for bulk operations</li>
+                    </ul>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tech-card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>Reliability</h4>
+                    <ul>
+                        <li>99.9% uptime SLA achieved</li>
+                        <li>Auto-restart on failure</li>
+                        <li>Health check endpoints</li>
+                        <li>Comprehensive logging & monitoring</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="project-tech-stack">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technology Stack</h2>
+                <p>Tools and technologies powering the platform</p>
+            </div>
+            
+            <div class="tech-stack-container">
+                <div class="tech-stack-category">
+                    <h4><i class="fas fa-server"></i> Backend</h4>
+                    <div class="tech-stack-items">
+                        <div class="tech-stack-item">
+                            <i class="fab fa-java"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">Java Spring Boot</span>
+                                <span class="tech-desc">REST APIs & Business Logic</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fab fa-python"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">Python</span>
+                                <span class="tech-desc">Data Ingestion Workers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-stack-category">
+                    <h4><i class="fas fa-desktop"></i> Frontend</h4>
+                    <div class="tech-stack-items">
+                        <div class="tech-stack-item">
+                            <i class="fab fa-react"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">React.js</span>
+                                <span class="tech-desc">User Interface</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fas fa-map"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">Leaflet.js</span>
+                                <span class="tech-desc">Map Visualization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-stack-category">
+                    <h4><i class="fas fa-database"></i> Database</h4>
+                    <div class="tech-stack-items">
+                        <div class="tech-stack-item">
+                            <i class="fas fa-database"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">PostgreSQL</span>
+                                <span class="tech-desc">Primary Database</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fas fa-bolt"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">Redis</span>
+                                <span class="tech-desc">Caching Layer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-stack-category">
+                    <h4><i class="fas fa-plug"></i> Protocols</h4>
+                    <div class="tech-stack-items">
+                        <div class="tech-stack-item">
+                            <i class="fas fa-satellite-dish"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">UDP/TCP</span>
+                                <span class="tech-desc">AIS Data Reception</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fas fa-ship"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">NMEA 0183</span>
+                                <span class="tech-desc">AIS Message Format</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fas fa-exchange-alt"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">REST API</span>
+                                <span class="tech-desc">Client Communication</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges & Solutions -->
+    <section class="project-challenges">
+        <div class="container">
+            <div class="section-header">
+                <h2>Challenges & Solutions</h2>
+                <p>Engineering decisions that made the difference</p>
+            </div>
+
+            <div class="challenges-grid">
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-icon problem">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h4>Challenge</h4>
+                    </div>
+                    <h5>High-Volume Real-Time Data Ingestion</h5>
+                    <p>
+                        Processing 50,000+ vessel positions daily from 8 AIS stations 
+                        transmitting via UDP without packet loss or data corruption.
+                    </p>
+                    
+                    <div class="solution-header">
+                        <div class="challenge-icon solution">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>Solution</h4>
+                    </div>
+                    <p>
+                        Implemented Python-based UDP listener with async processing, 
+                        message queuing, and batch database inserts. Used connection pooling 
+                        and optimized write operations to handle high throughput while 
+                        maintaining data integrity.
+                    </p>
+                    <div class="solution-result">
+                        <i class="fas fa-check"></i>
+                        <span>Zero data loss with 50K+ daily records</span>
+                    </div>
+                </div>
+
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-icon problem">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h4>Challenge</h4>
+                    </div>
+                    <h5>Report Generation Performance</h5>
+                    <p>
+                        Monthly reports with millions of records causing timeout issues 
+                        and poor user experience, with some reports taking over 30 seconds.
+                    </p>
+                    
+                    <div class="solution-header">
+                        <div class="challenge-icon solution">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>Solution</h4>
+                    </div>
+                    <p>
+                        Implemented multi-layer caching with Redis, pre-aggregated summary 
+                        tables updated via scheduled jobs, and optimized PostgreSQL queries 
+                        with proper indexing and query planning strategies.
+                    </p>
+                    <div class="solution-result">
+                        <i class="fas fa-check"></i>
+                        <span>Report generation reduced from 30s to under 2s (15x faster)</span>
+                    </div>
+                </div>
+
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-icon problem">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h4>Challenge</h4>
+                    </div>
+                    <h5>24/7 System Reliability</h5>
+                    <p>
+                        Critical infrastructure monitoring requires near-zero downtime 
+                        with automatic recovery from failures and comprehensive alerting.
+                    </p>
+                    
+                    <div class="solution-header">
+                        <div class="challenge-icon solution">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>Solution</h4>
+                    </div>
+                    <p>
+                        Designed fault-tolerant architecture with health checks, automatic 
+                        service restarts via systemd, comprehensive logging to files and 
+                        centralized systems, and real-time monitoring dashboards.
+                    </p>
+                    <div class="solution-result">
+                        <i class="fas fa-check"></i>
+                        <span>Achieved 99.9% uptime SLA over 3+ months</span>
+                    </div>
+                </div>
+
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-icon problem">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h4>Challenge</h4>
+                    </div>
+                    <h5>Real-Time Map Performance</h5>
+                    <p>
+                        Displaying thousands of vessel markers on the map while maintaining 
+                        smooth user interaction and frequent position updates.
+                    </p>
+                    
+                    <div class="solution-header">
+                        <div class="challenge-icon solution">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>Solution</h4>
+                    </div>
+                    <p>
+                        Implemented marker clustering with Leaflet.js MarkerCluster plugin, 
+                        viewport-based data loading to fetch only visible vessels, and 
+                        incremental position updates instead of full refreshes.
+                    </p>
+                    <div class="solution-result">
+                        <i class="fas fa-check"></i>
+                        <span>Smooth 60fps map interaction with 1000+ vessels</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results & Impact -->
+    <section class="project-results">
+        <div class="container">
+            <div class="section-header light">
+                <h2>Results & Impact</h2>
+                <p>Measurable outcomes from the project</p>
+            </div>
+
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="result-number">99.9%</div>
+                    <div class="result-label">System Uptime</div>
+                    <p>Exceeding SLA requirements for critical infrastructure monitoring</p>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="result-number">50K+</div>
+                    <div class="result-label">Daily Data Points</div>
+                    <p>Vessel positions processed accurately without data loss</p>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <div class="result-number">15x</div>
+                    <div class="result-label">Faster Reports</div>
+                    <p>Report generation optimized from 30 seconds to under 2 seconds</p>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="result-number">24/7</div>
+                    <div class="result-label">Monitoring</div>
+                    <p>Continuous protection for submarine cable assets around the clock</p>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-broadcast-tower"></i>
+                    </div>
+                    <div class="result-number">8</div>
+                    <div class="result-label">AIS Stations</div>
+                    <p>Integrated across multiple Indonesian coastal regions</p>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="result-number">0</div>
+                    <div class="result-label">Cable Incidents</div>
+                    <p>No cable damage incidents since system deployment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="project-gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Project Gallery</h2>
+                <p>Screenshots from the live system</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <img src="../assets/projects/vms/vms-map.png" alt="Live Map View">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Interactive Map Dashboard</h4>
+                            <p>Real-time vessel tracking across Indonesian waters</p>
+                        </div>
+                        <button class="gallery-zoom" data-image="../assets/projects/vms/vms-map.png">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="../assets/projects/vms/vms-performance.png" alt="Performance Dashboard">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Station Performance</h4>
+                            <p>Monthly uptime tracking per station</p>
+                        </div>
+                        <button class="gallery-zoom" data-image="../assets/projects/vms/vms-performance.png">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="../assets/projects/vms/vms-report.png" alt="Monthly Reports">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Traffic Reports</h4>
+                            <p>Vessel counts by segment and type</p>
+                        </div>
+                        <button class="gallery-zoom" data-image="../assets/projects/vms/vms-report.png">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Contributions -->
+    <section class="project-contributions">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Contributions</h2>
+                <p>Key responsibilities and deliverables</p>
+            </div>
+
+            <div class="contributions-grid">
+                <div class="contribution-card">
+                    <div class="contribution-icon">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <h4>System Architecture</h4>
+                    <p>
+                        Designed the complete system architecture including data flow diagrams, 
+                        service boundaries, database schema, and API contracts. Made technology 
+                        decisions balancing performance, reliability, and development speed.
+                    </p>
+                </div>
+
+                <div class="contribution-card">
+                    <div class="contribution-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h4>Backend Development</h4>
+                    <p>
+                        Built REST APIs with Java Spring Boot following MVC patterns, developed 
+                        Python workers for real-time AIS data ingestion via UDP, and implemented 
+                        business logic for reporting and alerting systems.
+                    </p>
+                </div>
+
+                <div class="contribution-card">
+                    <div class="contribution-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h4>Frontend Development</h4>
+                    <p>
+                        Developed React dashboard with interactive maps using Leaflet.js, 
+                        built responsive UI components for monitoring and reporting, and 
+                        implemented real-time data updates for vessel tracking.
+                    </p>
+                </div>
+
+                <div class="contribution-card">
+                    <div class="contribution-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h4>Database Optimization</h4>
+                    <p>
+                        Implemented multi-layer caching strategies with Redis, optimized 
+                        PostgreSQL queries through proper indexing, and designed efficient 
+                        data models for time-series vessel position data.
+                    </p>
+                </div>
+
+                <div class="contribution-card">
+                    <div class="contribution-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4>Customer Facing</h4>
+                    <p>
+                        Gathered requirements directly from stakeholders and end-users, 
+                        conducted system demonstrations, incorporated feedback into 
+                        development cycles, and provided technical documentation.
+                    </p>
+                </div>
+
+                <div class="contribution-card">
+                    <div class="contribution-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h4>Quality & Operations</h4>
+                    <p>
+                        Ensured system reliability through comprehensive testing, set up 
+                        monitoring and logging infrastructure, maintained SLA compliance, 
+                        and handled production support and incident response.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lessons Learned -->
+    <section class="project-lessons">
+        <div class="container">
+            <div class="section-header">
+                <h2>Key Takeaways</h2>
+                <p>Lessons learned from this project</p>
+            </div>
+
+            <div class="lessons-grid">
+                <div class="lesson-card">
+                    <span class="lesson-number">01</span>
+                    <h4>Real-Time Systems Require Robust Error Handling</h4>
+                    <p>
+                        UDP packets can be lost or corrupted. Building resilient parsers and 
+                        implementing proper error handling at every stage of the pipeline is 
+                        crucial for maintaining data quality in real-time systems.
+                    </p>
+                </div>
+
+                <div class="lesson-card">
+                    <span class="lesson-number">02</span>
+                    <h4>Caching Strategy is Critical for Reporting</h4>
+                    <p>
+                        Pre-computing aggregations and implementing intelligent caching layers 
+                        can transform query performance from minutes to milliseconds, dramatically 
+                        improving user experience for data-heavy applications.
+                    </p>
+                </div>
+
+                <div class="lesson-card">
+                    <span class="lesson-number">03</span>
+                    <h4>Customer Collaboration Drives Better Solutions</h4>
+                    <p>
+                        Regular communication with end-users revealed requirements that weren't 
+                        in the initial spec. Iterative feedback loops helped deliver features 
+                        that truly addressed operational needs.
+                    </p>
+                </div>
+
+                <div class="lesson-card">
+                    <span class="lesson-number">04</span>
+                    <h4>Monitoring is Not Optional for Critical Systems</h4>
+                    <p>
+                        Comprehensive logging, health checks, and alerting are essential for 
+                        24/7 systems. Investing in observability early pays dividends when 
+                        troubleshooting production issues at 3 AM.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="project-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Interested in Similar Solutions?</h2>
+                <p>
+                    I specialize in building real-time monitoring systems, data pipelines, 
+                    and enterprise applications. Let's discuss how I can help with your project.
+                </p>
+                <div class="cta-buttons">
+                    <a href="../index.html#contact" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Get In Touch
+                    </a>
+                    <a href="../index.html#projects" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i> View All Projects
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Navigation -->
+    <section class="project-navigation">
+        <div class="container">
+            <div class="nav-grid">
+                <a href="../index.html#projects" class="nav-item prev">
+                    <span class="nav-label"><i class="fas fa-th-large"></i> All Projects</span>
+                    <span class="nav-title">Back to Portfolio</span>
+                </a>
+                <a href="mstock-trading-platform.html" class="nav-item next">
+                    <span class="nav-label">Next Project <i class="fas fa-arrow-right"></i></span>
+                    <span class="nav-title">M-STOCK Trading Platform</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mochamad Teguh Subarkah. Built with <i class="fas fa-heart"></i> using HTML, CSS & JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <img src="" alt="Gallery Image" id="lightboxImage">
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="../js/project-detail.js"></script>
+</body>
+</html>

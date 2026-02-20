@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Direct Market Access - FIX Protocol based trading gateway for institutional clients at Mirae Asset Sekuritas Indonesia">
+    <title>Direct Market Access | Mochamad Teguh Subarkah</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/project-detail.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">MT<span class="accent">S</span></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../index.html#about" class="nav-link">About</a></li>
+                <li><a href="../index.html#experience" class="nav-link">Experience</a></li>
+                <li><a href="../index.html#projects" class="nav-link active">Projects</a></li>
+                <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero dma-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="../index.html#projects">Projects</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Direct Market Access</span>
+            </div>
+            
+            <div class="project-hero-content">
+                <div class="project-hero-text">
+                    <div class="project-category-badge">
+                        <i class="fas fa-network-wired"></i> Institutional Trading
+                    </div>
+                    <h1>Direct Market Access</h1>
+                    <p class="project-tagline">
+                        FIX Protocol-based trading gateway enabling institutional clients 
+                        to execute orders directly on the Indonesia Stock Exchange through 
+                        Bloomberg and Marvelsoft terminals
+                    </p>
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-building"></i>
+                            <span>Mirae Asset Sekuritas</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>2022 – 2024</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-user-tie"></i>
+                            <span>Backend Developer</span>
+                        </div>
+                        <div class="meta-item status-first">
+                            <i class="fas fa-trophy"></i>
+                            <span>Company First</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">FIX</div>
+                        <div class="hero-stat-label">4.2 / 4.4 Protocol</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">2</div>
+                        <div class="hero-stat-label">Terminal Integrations</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">24/5</div>
+                        <div class="hero-stat-label">Market Hours</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">1st</div>
+                        <div class="hero-stat-label">Algo Trading at Company</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Showcase - DMA Flow -->
+    <section class="project-showcase dma-showcase">
+        <div class="container">
+            <div class="dma-flow-visual">
+                <div class="flow-header">
+                    <h3>How Direct Market Access Works</h3>
+                    <p>End-to-end order flow from institutional terminal to exchange execution</p>
+                </div>
+                <div class="dma-flow">
+                    <div class="flow-step">
+                        <div class="flow-icon terminal">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h4>Bloomberg / Marvelsoft</h4>
+                        <p>Institutional client submits order via trading terminal</p>
+                    </div>
+                    <div class="flow-connector">
+                        <div class="connector-protocol">FIX 4.4</div>
+                        <div class="connector-line-horizontal"></div>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <div class="flow-step">
+                        <div class="flow-icon gateway">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h4>DMA Gateway</h4>
+                        <p>FIX engine validates, routes & manages order lifecycle</p>
+                    </div>
+                    <div class="flow-connector">
+                        <div class="connector-protocol">FIX 4.2</div>
+                        <div class="connector-line-horizontal"></div>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                    <div class="flow-step">
+                        <div class="flow-icon exchange">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h4>IDX Exchange</h4>
+                        <p>Order matched and executed on Indonesia Stock Exchange</p>
+                    </div>
+                    <div class="flow-connector reverse">
+                        <i class="fas fa-arrow-left"></i>
+                        <div class="connector-line-horizontal"></div>
+                        <div class="connector-protocol">Execution Report</div>
+                    </div>
+                    <div class="flow-step">
+                        <div class="flow-icon admin">
+                            <i class="fas fa-tv"></i>
+                        </div>
+                        <h4>Admin Console</h4>
+                        <p>Real-time session monitoring via JavaFX dashboard</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="project-overview">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-main">
+                    <h2>Project Overview</h2>
+                    <p>
+                        Direct Market Access (DMA) is a FIX Protocol-based trading gateway that I developed 
+                        at Mirae Asset Sekuritas Indonesia, enabling institutional clients to execute 
+                        stock orders directly on the Indonesia Stock Exchange (IDX). This was the 
+                        <strong>first implementation of algorithmic and direct market trading</strong> 
+                        at the company, opening an entirely new revenue channel for institutional business.
+                    </p>
+                    <p>
+                        The system uses the Financial Information eXchange (FIX) protocol — the industry 
+                        standard for electronic trading communication — to connect institutional trading 
+                        terminals like Bloomberg EMSX and Marvelsoft directly to the exchange. The gateway 
+                        handles order routing, execution reports, session management, and real-time 
+                        monitoring through a custom-built admin console.
+                    </p>
+                    <p>
+                        The core challenge was building a highly reliable, low-latency system that could 
+                        handle the complexities of FIX message processing — including asynchronous execution 
+                        reports, multi-threaded session management, queue-based message delivery, and 
+                        automatic reconnection handling — all while maintaining strict compliance with 
+                        exchange regulations.
+                    </p>
+                    
+                    <div class="overview-highlights">
+                        <div class="highlight-box">
+                            <i class="fas fa-trophy"></i>
+                            <div>
+                                <h4>First of Its Kind</h4>
+                                <p>First DMA and algorithmic trading implementation at Mirae Asset Indonesia, pioneering a new way of institutional trading</p>
+                            </div>
+                        </div>
+                        <div class="highlight-box">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>End Users</h4>
+                                <p>Institutional clients, hedge funds, and asset managers using Bloomberg and Marvelsoft terminals</p>
+                            </div>
+                        </div>
+                        <div class="highlight-box">
+                            <i class="fas fa-bolt"></i>
+                            <div>
+                                <h4>Low Latency Critical</h4>
+                                <p>Institutional trading demands millisecond-level execution with zero order loss or duplication</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="overview-sidebar">
+                    <div class="sidebar-card">
+                        <h4><i class="fas fa-tools"></i> My Role</h4>
+                        <ul class="role-list">
+                            <li>FIX Engine Development</li>
+                            <li>Order Routing & Execution Logic</li>
+                            <li>Bloomberg Integration</li>
+                            <li>Marvelsoft Integration</li>
+                            <li>Admin Console (JavaFX)</li>
+                            <li>Multi-threaded Processing</li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-card">
+                        <h4><i class="fas fa-exchange-alt"></i> FIX Messages Handled</h4>
+                        <ul class="role-list">
+                            <li>New Order Single (D)</li>
+                            <li>Execution Report (8)</li>
+                            <li>Order Cancel Request (F)</li>
+                            <li>Order Cancel/Replace (G)</li>
+                            <li>Order Cancel Reject (9)</li>
+                            <li>Heartbeat / Logon / Logout</li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-card">
+                        <h4><i class="fas fa-clock"></i> Timeline</h4>
+                        <div class="timeline-mini">
+                            <div class="timeline-mini-item">
+                                <span class="date">Q2 2022</span>
+                                <span class="event">FIX Engine Development</span>
+                            </div>
+                            <div class="timeline-mini-item">
+                                <span class="date">Q3 2022</span>
+                                <span class="event">Bloomberg Integration</span>
+                            </div>
+                            <div class="timeline-mini-item">
+                                <span class="date">Q4 2022</span>
+                                <span class="event">Marvelsoft Integration</span>
+                            </div>
+                            <div class="timeline-mini-item">
+                                <span class="date">Q1 2023</span>
+                                <span class="event">UAT & Production</span>
+                            </div>
+                            <div class="timeline-mini-item active">
+                                <span class="date">2024</span>
+                                <span class="event">Continuous Operations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="project-features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Key Capabilities</h2>
+                <p>Core features of the Direct Market Access gateway</p>
+            </div>
+
+            <div class="feature-card-grid">
+                <div class="feature-card-large">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3>FIX Protocol Engine</h3>
+                    <p>
+                        Built a robust FIX 4.2/4.4 communication engine handling the complete 
+                        order lifecycle — from new order submission through execution reports 
+                        and cancel/amend flows. Supports both initiator and acceptor modes 
+                        for connecting to terminals and exchange systems.
+                    </p>
+                    <div class="feature-tags">
+                        <span class="tag">FIX 4.2</span>
+                        <span class="tag">FIX 4.4</span>
+                        <span class="tag">QuickFIX/J</span>
+                        <span class="tag">Session Management</span>
+                        <span class="tag">Message Routing</span>
+                    </div>
+                </div>
+
+                <div class="feature-card-large">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3>Terminal Integrations</h3>
+                    <p>
+                        Integrated with Bloomberg EMSX and Marvelsoft trading terminals, 
+                        enabling institutional clients to trade on IDX using their preferred 
+                        platform. Each integration required custom message mapping and 
+                        client-specific order identifier handling.
+                    </p>
+                    <div class="feature-tags">
+                        <span class="tag">Bloomberg EMSX</span>
+                        <span class="tag">Marvelsoft</span>
+                        <span class="tag">Custom Mapping</span>
+                        <span class="tag">Multi-client Support</span>
+                    </div>
+                </div>
+
+                <div class="feature-card-large">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Async Execution Processing</h3>
+                    <p>
+                        Designed multi-threaded execution report processing with scheduled 
+                        tasks, blocking queues, and asynchronous workflows. Handles order 
+                        acknowledgments, rejections, fills, and partial fills with automatic 
+                        retry and queue management for undelivered messages.
+                    </p>
+                    <div class="feature-tags">
+                        <span class="tag">Multi-threaded</span>
+                        <span class="tag">Task Scheduling</span>
+                        <span class="tag">Blocking Queues</span>
+                        <span class="tag">Auto-retry</span>
+                        <span class="tag">Async Processing</span>
+                    </div>
+                </div>
+
+                <div class="feature-card-large">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <h3>Admin Monitoring Console</h3>
+                    <p>
+                        Built a JavaFX-based admin console for operations teams to monitor 
+                        FIX sessions in real-time, view order status, track execution reports, 
+                        and manage connections. Provides live visibility into the health 
+                        and activity of all DMA sessions.
+                    </p>
+                    <div class="feature-tags">
+                        <span class="tag">JavaFX</span>
+                        <span class="tag">Real-time Dashboard</span>
+                        <span class="tag">Session Monitor</span>
+                        <span class="tag">Order Tracking</span>
+                    </div>
+                </div>
+
+                <div class="feature-card-large">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Reliability & Recovery</h3>
+                    <p>
+                        Implemented fault-tolerant message handling with file-based queue 
+                        persistence for unsent messages, automatic session reconnection, 
+                        heartbeat monitoring, and scheduled cleanup of stale orders. 
+                        Ensures zero message loss even during network interruptions.
+                    </p>
+                    <div class="feature-tags">
+                        <span class="tag">Message Persistence</span>
+                        <span class="tag">Auto-reconnect</span>
+                        <span class="tag">Heartbeat</span>
+                        <span class="tag">Stale Order Cleanup</span>
+                    </div>
+                </div>
+
+                <div class="feature-card-large">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Scheduled Reconciliation</h3>
+                    <p>
+                        Built automated scheduled tasks that continuously scan for unexecuted 
+                        reports, unacknowledged orders, and pending rejections. The system 
+                        automatically resolves discrepancies between gateway state and 
+                        exchange state to maintain data consistency.
+                    </p>
+                    <div class="feature-tags">
+                        <span class="tag">Scheduled Tasks</span>
+                        <span class="tag">Auto-reconciliation</span>
+                        <span class="tag">State Management</span>
+                        <span class="tag">Consistency Checks</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture -->
+    <section class="project-architecture">
+        <div class="container">
+            <div class="section-header">
+                <h2>System Architecture</h2>
+                <p>Multi-session FIX gateway with async processing</p>
+            </div>
+
+            <div class="architecture-diagram-enhanced">
+                <div class="arch-layer-group">
+                    <h4>Trading Terminals</h4>
+                    <div class="arch-layer-items">
+                        <div class="arch-box external">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Bloomberg EMSX</span>
+                            <small>FIX 4.4</small>
+                        </div>
+                        <div class="arch-box external">
+                            <i class="fas fa-desktop"></i>
+                            <span>Marvelsoft</span>
+                            <small>FIX 4.4</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arch-connector">
+                    <div class="connector-line"></div>
+                    <span>FIX Protocol (TCP/IP)</span>
+                </div>
+
+                <div class="arch-layer-group">
+                    <h4>DMA Gateway</h4>
+                    <div class="arch-layer-items services">
+                        <div class="arch-box highlight">
+                            <i class="fas fa-cogs"></i>
+                            <span>FIX Engine</span>
+                            <small>QuickFIX/J</small>
+                        </div>
+                        <div class="arch-box service">
+                            <i class="fas fa-tasks"></i>
+                            <span>Execution Processor</span>
+                            <small>Multi-threaded</small>
+                        </div>
+                        <div class="arch-box service">
+                            <i class="fas fa-route"></i>
+                            <span>Order Router</span>
+                            <small>Session Mgmt</small>
+                        </div>
+                        <div class="arch-box service">
+                            <i class="fas fa-clock"></i>
+                            <span>Task Scheduler</span>
+                            <small>Reconciliation</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arch-connector">
+                    <div class="connector-line"></div>
+                </div>
+
+                <div class="arch-layer-group">
+                    <h4>Data & Monitoring</h4>
+                    <div class="arch-layer-items">
+                        <div class="arch-box data">
+                            <i class="fas fa-database"></i>
+                            <span>Order Database</span>
+                        </div>
+                        <div class="arch-box data">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Message Queue</span>
+                            <small>File-based</small>
+                        </div>
+                        <div class="arch-box highlight">
+                            <i class="fas fa-tv"></i>
+                            <span>Admin Console</span>
+                            <small>JavaFX</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arch-connector">
+                    <div class="connector-line"></div>
+                    <span>FIX 4.2</span>
+                </div>
+
+                <div class="arch-layer-group">
+                    <h4>Exchange</h4>
+                    <div class="arch-layer-items">
+                        <div class="arch-box external">
+                            <i class="fas fa-university"></i>
+                            <span>IDX Exchange</span>
+                            <small>Indonesia Stock Exchange</small>
+                        </div>
+                        <div class="arch-box external">
+                            <i class="fas fa-landmark"></i>
+                            <span>KSEI / KPEI</span>
+                            <small>Settlement</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="project-tech-stack">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technology Stack</h2>
+                <p>Built for reliability and low-latency execution</p>
+            </div>
+            
+            <div class="tech-stack-container">
+                <div class="tech-stack-category">
+                    <h4><i class="fas fa-server"></i> Core</h4>
+                    <div class="tech-stack-items">
+                        <div class="tech-stack-item">
+                            <i class="fab fa-java"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">Java</span>
+                                <span class="tech-desc">Core application language</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fas fa-leaf"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">Spring Boot</span>
+                                <span class="tech-desc">Application framework & scheduling</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fas fa-cogs"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">QuickFIX/J</span>
+                                <span class="tech-desc">FIX protocol engine</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-stack-category">
+                    <h4><i class="fas fa-exchange-alt"></i> Protocols</h4>
+                    <div class="tech-stack-items">
+                        <div class="tech-stack-item">
+                            <i class="fas fa-network-wired"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">FIX 4.4</span>
+                                <span class="tech-desc">Terminal ↔ Gateway communication</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fas fa-network-wired"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">FIX 4.2</span>
+                                <span class="tech-desc">Gateway ↔ Exchange communication</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fas fa-plug"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">TCP/IP Socket</span>
+                                <span class="tech-desc">Low-level network communication</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-stack-category">
+                    <h4><i class="fas fa-desktop"></i> Monitoring</h4>
+                    <div class="tech-stack-items">
+                        <div class="tech-stack-item">
+                            <i class="fas fa-tv"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">JavaFX</span>
+                                <span class="tech-desc">Admin console UI</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fas fa-chart-area"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">Session Monitoring</span>
+                                <span class="tech-desc">Real-time FIX session health</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-stack-category">
+                    <h4><i class="fas fa-tools"></i> Infrastructure</h4>
+                    <div class="tech-stack-items">
+                        <div class="tech-stack-item">
+                            <i class="fas fa-database"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">Database</span>
+                                <span class="tech-desc">Order & execution report storage</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fas fa-tasks"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">Spring Scheduling</span>
+                                <span class="tech-desc">Async task & reconciliation</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack-item">
+                            <i class="fab fa-docker"></i>
+                            <div class="tech-info">
+                                <span class="tech-name">Docker</span>
+                                <span class="tech-desc">Containerized deployment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How FIX Protocol Works - Educational Section -->
+    <section class="fix-explainer">
+        <div class="container">
+            <div class="section-header">
+                <h2>Understanding FIX Protocol</h2>
+                <p>The industry standard for electronic trading communication</p>
+            </div>
+
+            <div class="fix-overview">
+                <div class="fix-info">
+                    <p>
+                        The <strong>Financial Information eXchange (FIX)</strong> protocol is the global 
+                        standard for electronic communication in financial markets. Used by exchanges, 
+                        brokers, and institutional investors worldwide, FIX enables standardized 
+                        order routing, execution, and post-trade communication.
+                    </p>
+                </div>
+
+                <div class="fix-message-flow">
+                    <h4>Typical Order Flow</h4>
+                    <div class="message-flow-steps">
+                        <div class="msg-step">
+                            <div class="msg-icon send">
+                                <i class="fas fa-paper-plane"></i>
+                            </div>
+                            <div class="msg-content">
+                                <span class="msg-type">New Order Single (35=D)</span>
+                                <p>Client sends order via terminal</p>
+                            </div>
+                        </div>
+                        <div class="msg-step">
+                            <div class="msg-icon receive">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="msg-content">
+                                <span class="msg-type">Execution Report (35=8)</span>
+                                <p>Gateway confirms order received (Ack)</p>
+                            </div>
+                        </div>
+                        <div class="msg-step">
+                            <div class="msg-icon process">
+                                <i class="fas fa-sync"></i>
+                            </div>
+                            <div class="msg-content">
+                                <span class="msg-type">Order Routed to Exchange</span>
+                                <p>Gateway forwards to IDX via FIX 4.2</p>
+                            </div>
+                        </div>
+                        <div class="msg-step">
+                            <div class="msg-icon receive">
+                                <i class="fas fa-check-double"></i>
+                            </div>
+                            <div class="msg-content">
+                                <span class="msg-type">Execution Report (35=8)</span>
+                                <p>Fill / Partial Fill / Reject from exchange</p>
+                            </div>
+                        </div>
+                        <div class="msg-step">
+                            <div class="msg-icon send">
+                                <i class="fas fa-reply"></i>
+                            </div>
+                            <div class="msg-content">
+                                <span class="msg-type">Execution Report to Client</span>
+                                <p>Gateway relays execution status to terminal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges & Solutions -->
+    <section class="project-challenges">
+        <div class="container">
+            <div class="section-header">
+                <h2>Challenges & Solutions</h2>
+                <p>Technical complexities of building a FIX trading gateway</p>
+            </div>
+
+            <div class="challenges-grid">
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-icon problem">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h4>Challenge</h4>
+                    </div>
+                    <h5>Asynchronous Execution Report Processing</h5>
+                    <p>
+                        Execution reports from the exchange arrive asynchronously and must 
+                        be matched to the correct client order, processed in the right 
+                        sequence, and delivered reliably — even during high-volume periods.
+                    </p>
+                    <div class="solution-header">
+                        <div class="challenge-icon solution">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>Solution</h4>
+                    </div>
+                    <p>
+                        Implemented multi-threaded processing with dedicated task schedulers, 
+                        blocking queues for ordered task execution, and scheduled reconciliation 
+                        jobs that scan for unprocessed reports every 500ms.
+                    </p>
+                    <div class="solution-result">
+                        <i class="fas fa-check"></i>
+                        <span>Zero missed execution reports in production</span>
+                    </div>
+                </div>
+
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-icon problem">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h4>Challenge</h4>
+                    </div>
+                    <h5>Multi-Terminal Order ID Mapping</h5>
+                    <p>
+                        Bloomberg and Marvelsoft use different order identifier formats. 
+                        Mapping client order IDs to exchange order IDs across different 
+                        terminal types while maintaining correct routing.
+                    </p>
+                    <div class="solution-header">
+                        <div class="challenge-icon solution">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>Solution</h4>
+                    </div>
+                    <p>
+                        Built custom order ID mapping layer that translates between terminal-specific 
+                        formats and internal identifiers. Used database-backed ID splitting 
+                        and reconstruction for Marvelsoft's unique format.
+                    </p>
+                    <div class="solution-result">
+                        <i class="fas fa-check"></i>
+                        <span>Seamless multi-terminal order tracking</span>
+                    </div>
+                </div>
+
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-icon problem">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h4>Challenge</h4>
+                    </div>
+                    <h5>Message Delivery Reliability</h5>
+                    <p>
+                        Network interruptions between gateway and exchange could cause 
+                        messages to be lost. Every execution report must be delivered 
+                        to the client terminal — failure means financial discrepancy.
+                    </p>
+                    <div class="solution-header">
+                        <div class="challenge-icon solution">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>Solution</h4>
+                    </div>
+                    <p>
+                        Implemented file-based message persistence for unsent messages 
+                        with automatic retry mechanism. Scheduled jobs continuously 
+                        attempt to deliver queued messages until successful.
+                    </p>
+                    <div class="solution-result">
+                        <i class="fas fa-check"></i>
+                        <span>Guaranteed message delivery with persistence</span>
+                    </div>
+                </div>
+
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <div class="challenge-icon problem">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h4>Challenge</h4>
+                    </div>
+                    <h5>Stale Order & Rejection Handling</h5>
+                    <p>
+                        Orders that get rejected without acknowledgment, or acknowledged 
+                        orders that later fail, require complex state management to 
+                        avoid leaving orphan orders in the system.
+                    </p>
+                    <div class="solution-header">
+                        <div class="challenge-icon solution">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>Solution</h4>
+                    </div>
+                    <p>
+                        Built automated reconciliation tasks that check acknowledgment 
+                        status before sending rejections, clean up stale orders, and 
+                        generate unique execution IDs to prevent conflicts.
+                    </p>
+                    <div class="solution-result">
+                        <i class="fas fa-check"></i>
+                        <span>Automated state reconciliation every 600ms</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results & Impact -->
+    <section class="project-results">
+        <div class="container">
+            <div class="section-header light">
+                <h2>Results & Impact</h2>
+                <p>Business outcomes from the DMA implementation</p>
+            </div>
+
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-icon"><i class="fas fa-trophy"></i></div>
+                    <div class="result-number">1st</div>
+                    <div class="result-label">Company First</div>
+                    <p>First DMA & algo trading at Mirae Asset Indonesia</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon"><i class="fas fa-plug"></i></div>
+                    <div class="result-number">2</div>
+                    <div class="result-label">Terminal Integrations</div>
+                    <p>Bloomberg EMSX & Marvelsoft</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon"><i class="fas fa-bolt"></i></div>
+                    <div class="result-number">&lt;50ms</div>
+                    <div class="result-label">Order Routing</div>
+                    <p>Low-latency gateway processing</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon"><i class="fas fa-shield-alt"></i></div>
+                    <div class="result-number">0</div>
+                    <div class="result-label">Lost Messages</div>
+                    <p>Guaranteed delivery with persistence</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="result-number">New</div>
+                    <div class="result-label">Revenue Channel</div>
+                    <p>Opened institutional trading business</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon"><i class="fas fa-server"></i></div>
+                    <div class="result-number">24/5</div>
+                    <div class="result-label">Availability</div>
+                    <p>Reliable throughout market hours</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contributions -->
+    <section class="project-contributions">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Contributions</h2>
+                <p>Key responsibilities in the DMA project</p>
+            </div>
+
+            <div class="contributions-grid">
+                <div class="contribution-card">
+                    <div class="contribution-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h4>FIX Engine Development</h4>
+                    <p>
+                        Built the core FIX engine using QuickFIX/J, handling session management, 
+                        message parsing, and protocol-level communication for both FIX 4.2 and 4.4.
+                    </p>
+                </div>
+                <div class="contribution-card">
+                    <div class="contribution-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h4>Order Routing Logic</h4>
+                    <p>
+                        Implemented order routing from terminal sessions to exchange sessions, 
+                        including order type mapping, validation, and execution report relay.
+                    </p>
+                </div>
+                <div class="contribution-card">
+                    <div class="contribution-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h4>Async Processing Engine</h4>
+                    <p>
+                        Designed multi-threaded execution processing with task schedulers, 
+                        blocking queues, and background reconciliation for reliable order handling.
+                    </p>
+                </div>
+                <div class="contribution-card">
+                    <div class="contribution-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h4>Terminal Integrations</h4>
+                    <p>
+                        Integrated Bloomberg EMSX and Marvelsoft terminals with custom 
+                        message mapping and order ID handling for each platform.
+                    </p>
+                </div>
+                <div class="contribution-card">
+                    <div class="contribution-icon">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <h4>Admin Console</h4>
+                    <p>
+                        Built JavaFX-based monitoring dashboard for operations team to 
+                        track FIX sessions, order status, and system health in real-time.
+                    </p>
+                </div>
+                <div class="contribution-card">
+                    <div class="contribution-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>Reliability Engineering</h4>
+                    <p>
+                        Implemented message persistence, auto-retry, session reconnection, 
+                        and scheduled reconciliation to ensure zero message loss.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Takeaways -->
+    <section class="project-lessons">
+        <div class="container">
+            <div class="section-header">
+                <h2>Key Takeaways</h2>
+                <p>Lessons from building a production FIX trading gateway</p>
+            </div>
+
+            <div class="lessons-grid">
+                <div class="lesson-card">
+                    <span class="lesson-number">01</span>
+                    <h4>FIX Protocol is Deceptively Complex</h4>
+                    <p>
+                        While the specification seems straightforward, real-world FIX 
+                        implementations involve handling edge cases in session recovery, 
+                        sequence number gaps, and vendor-specific message quirks that 
+                        aren't in the standard.
+                    </p>
+                </div>
+                <div class="lesson-card">
+                    <span class="lesson-number">02</span>
+                    <h4>Every Message Must Be Accounted For</h4>
+                    <p>
+                        In financial systems, a single lost execution report means money 
+                        discrepancy. Building persistence, retry mechanisms, and reconciliation 
+                        into the core architecture is non-negotiable.
+                    </p>
+                </div>
+                <div class="lesson-card">
+                    <span class="lesson-number">03</span>
+                    <h4>Multi-threading Requires Careful Design</h4>
+                    <p>
+                        Concurrent FIX message processing with multiple sessions demands 
+                        careful thread management. Blocking queues and task schedulers 
+                        provided the ordered execution guarantees needed for financial correctness.
+                    </p>
+                </div>
+                <div class="lesson-card">
+                    <span class="lesson-number">04</span>
+                    <h4>Monitoring is Essential for Production Trading</h4>
+                    <p>
+                        Having a real-time admin console was invaluable for operations. 
+                        Being able to see session states, pending orders, and message 
+                        queues at a glance enabled rapid issue identification.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="project-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need a Fintech or Trading System Developer?</h2>
+                <p>
+                    I have hands-on experience with FIX protocol, real-time systems, 
+                    and financial application development. Let's discuss your project.
+                </p>
+                <div class="cta-buttons">
+                    <a href="../index.html#contact" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Get In Touch
+                    </a>
+                    <a href="../index.html#projects" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left"></i> All Projects
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Navigation -->
+    <section class="project-navigation">
+        <div class="container">
+            <div class="nav-grid">
+                <a href="mstock-trading-platform.html" class="nav-item prev">
+                    <span class="nav-label"><i class="fas fa-arrow-left"></i> Previous Project</span>
+                    <span class="nav-title">M-STOCK Trading Platform</span>
+                </a>
+                <a href="cable-management-system.html" class="nav-item next">
+                    <span class="nav-label">Next Project <i class="fas fa-arrow-right"></i></span>
+                    <span class="nav-title">Cable Management System</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mochamad Teguh Subarkah. Built with <i class="fas fa-heart"></i> using HTML, CSS & JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="../js/project-detail.js"></script>
+</body>
+</html>

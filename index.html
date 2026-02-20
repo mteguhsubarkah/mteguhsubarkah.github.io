@@ -183,150 +183,147 @@
     </section>
 
     <!-- Experience Section -->
-<section id="experience" class="experience">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Work Experience</h2>
-            <p class="section-subtitle">My professional journey</p>
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
+
+            <div class="timeline">
+                <!-- PT LAGADI -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">October 2024 - Present</span>
+                        <h3>Full Stack Developer / Customer Facing</h3>
+                        <h4>PT. Lagadi</h4>
+                        <p>
+                            Developing mission-critical systems for submarine cable projects, including 
+                            Vessel Monitoring Systems and Cable Management Systems. 
+                            Responsible for architecture design, real-time data ingestion, customer requirement gathering, 
+                            and frontend-backend integration.
+                        </p>
+                        <ul>
+                            <li>Designed backend architecture using MVC pattern.</li>
+                            <li>Developed Python workers for real-time AIS ingestion (UDP-based), including preprocessing and caching strategies.</li>
+                            <li>Optimized database queries and implemented caching to handle heavy reporting loads.</li>
+                            <li>Built React.js dashboards for real-time vessel tracking and reporting.</li>
+                            <li>Delivered 24/7 monitoring system with SLA > 99%.</li>
+                            <li>Developed cable tension monitoring system with real-time visualization and alarm integration.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Java Spring Boot</span>
+                            <span>React / Next.js</span>
+                            <span>Python</span>
+                            <span>C/C++</span>
+                            <span>MQTT</span>
+                            <span>SQL</span>
+                            <span>UDP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MIRAE ASSET -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">August 2021 - September 2024</span>
+                        <h3>Full Stack Developer</h3>
+                        <h4>Mirae Asset Sekuritas Indonesia</h4>
+                        <p>
+                            Core contributor to the revamp of M-Stock trading platform and development of 
+                            institutional trading systems, mutual fund services, and regulatory reporting portals.
+                            Worked on high-performance, real-time financial systems handling live trading transactions.
+                        </p>
+
+                        <h5>M-Stock Revamp (Stock Trading App)</h5>
+                        <ul>
+                            <li>Designed and implemented REST APIs for buy/sell, amend, withdraw, and money withdrawal orders.</li>
+                            <li>Built real-time trade summary & stock summary using socket communication.</li>
+                            <li>Implemented WebSocket-based order book streaming with Redis Pub/Sub.</li>
+                            <li>Worked within microservices architecture using Consul for service discovery.</li>
+                            <li>Ensured transactional consistency with PostgreSQL and optimized indexing.</li>
+                            <li>Containerized services using Docker and monitored logs via Grafana.</li>
+                        </ul>
+
+                        <h5>Direct Market Order (FIX-Based Communication)</h5>
+                        <ul>
+                            <li>Developed FIX 4.2 / 4.4 based trading gateway for institutional clients.</li>
+                            <li>Integrated system with Bloomberg & Marvelsoft terminals.</li>
+                            <li>Built JavaFX-based admin console for monitoring FIX sessions.</li>
+                        </ul>
+
+                        <h5>NAVI - Mutual Fund Application</h5>
+                        <ul>
+                            <li>Developed REST APIs for SSO registration, withdrawal, and fund data retrieval.</li>
+                            <li>Integrated Kafka messaging and deployed via Docker in colo server environment.</li>
+                        </ul>
+
+                        <h5>Internal Reporting Portal</h5>
+                        <ul>
+                            <li>Built OJK compliance reporting system using Java + Thymeleaf.</li>
+                            <li>Generated fund sales and stock sales performance reports.</li>
+                        </ul>
+
+                        <div class="tech-tags">
+                            <span>Python (Django)</span>
+                            <span>Go</span>
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>FIX Protocol</span>
+                            <span>Kafka</span>
+                            <span>Redis</span>
+                            <span>PostgreSQL</span>
+                            <span>Docker</span>
+                            <span>Grafana</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SYERGIE AUTOMA -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">September 2020 - July 2021</span>
+                        <h3>R&D Lead & Production Manager</h3>
+                        <h4>Syergie Automa Teknologi</h4>
+                        <p>
+                            Led development of HFNC, CPAP, and ICU ventilators during COVID-19 period. 
+                            Managed engineering team, mechanical-electrical integration, and production line setup.
+                        </p>
+                        <div class="tech-tags">
+                            <span>Embedded Systems</span>
+                            <span>C#</span>
+                            <span>Mechanical Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SYERGIE INDOPRIMA -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">June 2017 - September 2020</span>
+                        <h3>Control System Engineer</h3>
+                        <h4>Syergie IndoPrima</h4>
+                        <p>
+                            Developed dynamic positioning systems and submarine cable-related embedded devices. 
+                            Led embedded, mechanical, and control system design.
+                        </p>
+                        <div class="tech-tags">
+                            <span>C/C++</span>
+                            <span>Python</span>
+                            <span>Embedded Systems</span>
+                            <span>Control Systems</span>
+                            <span>System Modeling and Simulation</span>
+                            <span>MATLAB/SIMULINK</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="timeline">
-
-            <!-- PT LAGADI -->
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <span class="timeline-date">October 2024 - Present</span>
-                    <h3>Full Stack Developer / Customer Facing</h3>
-                    <h4>PT. Lagadi</h4>
-                    <p>
-                        Developing mission-critical systems for submarine cable projects, including 
-                        Vessel Monitoring Systems and Cable Management Systems. 
-                        Responsible for architecture design, real-time data ingestion, customer requirement gathering, 
-                        and frontend-backend integration.
-                    </p>
-                    <ul>
-                        <li>Designed backend architecture using MVC pattern.</li>
-                        <li>Developed Python workers for real-time AIS ingestion (UDP-based), including preprocessing and caching strategies.</li>
-                        <li>Optimized database queries and implemented caching to handle heavy reporting loads.</li>
-                        <li>Built React.js dashboards for real-time vessel tracking and reporting.</li>
-                        <li>Delivered 24/7 monitoring system with SLA > 99%.</li>
-                        <li>Developed cable tension monitoring system with real-time visualization and alarm integration.</li>
-                    </ul>
-                    <div class="tech-tags">
-                        <span>Java Spring Boot</span>
-                        <span>React / Next.js</span>
-                        <span>Python</span>
-                        <span>C/C++</span>
-                        <span>MQTT</span>
-                        <span>SQL</span>
-                        <span>UDP</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- MIRAE ASSET -->
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <span class="timeline-date">August 2021 - September 2024</span>
-                    <h3>Full Stack Developer</h3>
-                    <h4>Mirae Asset Sekuritas Indonesia</h4>
-                    <p>
-                        Core contributor to the revamp of M-Stock trading platform and development of 
-                        institutional trading systems, mutual fund services, and regulatory reporting portals.
-                        Worked on high-performance, real-time financial systems handling live trading transactions.
-                    </p>
-
-                    <h5>M-Stock Revamp (Stock Trading App)</h5>
-                    <ul>
-                        <li>Designed and implemented REST APIs for buy/sell, amend, withdraw, and money withdrawal orders.</li>
-                        <li>Built real-time trade summary & stock summary using socket communication.</li>
-                        <li>Implemented WebSocket-based order book streaming with Redis Pub/Sub.</li>
-                        <li>Worked within microservices architecture using Consul for service discovery.</li>
-                        <li>Ensured transactional consistency with PostgreSQL and optimized indexing.</li>
-                        <li>Containerized services using Docker and monitored logs via Grafana.</li>
-                    </ul>
-
-                    <h5>Direct Market Order (FIX-Based Communication)</h5>
-                    <ul>
-                        <li>Developed FIX 4.2 / 4.4 based trading gateway for institutional clients.</li>
-                        <li>Integrated system with Bloomberg & Marvelsoft terminals.</li>
-                        <li>Built JavaFX-based admin console for monitoring FIX sessions.</li>
-                    </ul>
-
-                    <h5>NAVI - Mutual Fund Application</h5>
-                    <ul>
-                        <li>Developed REST APIs for SSO registration, withdrawal, and fund data retrieval.</li>
-                        <li>Integrated Kafka messaging and deployed via Docker in colo server environment.</li>
-                    </ul>
-
-                    <h5>Internal Reporting Portal</h5>
-                    <ul>
-                        <li>Built OJK compliance reporting system using Java + Thymeleaf.</li>
-                        <li>Generated fund sales and stock sales performance reports.</li>
-                    </ul>
-
-                    <div class="tech-tags">
-                        <span>Python (Django)</span>
-                        <span>Go</span>
-                        <span>Java</span>
-                        <span>Spring Boot</span>
-                        <span>FIX Protocol</span>
-                        <span>Kafka</span>
-                        <span>Redis</span>
-                        <span>PostgreSQL</span>
-                        <span>Docker</span>
-                        <span>Grafana</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- SYERGIE AUTOMA -->
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <span class="timeline-date">September 2020 - July 2021</span>
-                    <h3>R&D Lead & Production Manager</h3>
-                    <h4>Syergie Automa Teknologi</h4>
-                    <p>
-                        Led development of HFNC, CPAP, and ICU ventilators during COVID-19 period. 
-                        Managed engineering team, mechanical-electrical integration, and production line setup.
-                    </p>
-                    <div class="tech-tags">
-                        <span>Embedded Systems</span>
-                        <span>C#</span>
-                        <span>Mechanical Design</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- SYERGIE INDOPRIMA -->
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <span class="timeline-date">June 2017 - September 2020</span>
-                    <h3>Control System Engineer</h3>
-                    <h4>Syergie IndoPrima</h4>
-                    <p>
-                        Developed dynamic positioning systems and submarine cable-related embedded devices. 
-                        Led embedded, mechanical, and control system design.
-                    </p>
-                    <div class="tech-tags">
-                        <span>C/C++</span>
-                        <span>Python</span>
-                        <span>Embedded Systems</span>
-                        <span>Control Systems</span>
-                        <span>System Modeling and Simulation</span>
-                        <span>MATLAB/SIMULINK</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
+    </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
@@ -336,38 +333,81 @@
                 <p class="section-subtitle">Some things I've built</p>
             </div>
             <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
+                <!-- Project 1 - VMS (Featured) -->
+                <div class="project-card featured">
+                    <div class="project-badge">Featured</div>
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Vessel Monitoring System">
+                        <img src="assets/projects/vms/vms-map.png" alt="AIS Monitoring System">
                         <div class="project-overlay">
-                            <a href="#" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
+                            <a href="projects/vessel-monitoring-system.html" class="project-link">
+                                <i class="fas fa-eye"></i> View Details
                             </a>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Vessel Monitoring System</h3>
+                        <div class="project-header">
+                            <h3>AIS Monitoring System</h3>
+                            <span class="project-status live">
+                                <span class="pulse"></span> Live 24/7
+                            </span>
+                        </div>
                         <p>
-                            Real-time 24/7 vessel tracking system with AIS data ingestion, interactive maps, 
-                            and automated reporting. Achieved 99% SLA with optimized caching and query strategies.
+                            Enterprise-grade vessel monitoring platform for submarine cable protection. 
+                            Real-time AIS data ingestion from 15+ coastal stations, processing 50,000+ 
+                            vessel positions daily with 99.9% uptime SLA.
                         </p>
+                        <div class="project-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-map-marked-alt"></i>
+                                <span>Live Map Tracking</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Performance Analytics</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-file-alt"></i>
+                                <span>Automated Reports</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-bell"></i>
+                                <span>Alert System</span>
+                            </div>
+                        </div>
                         <div class="project-tech">
                             <span>Java Spring Boot</span>
                             <span>React.js</span>
                             <span>Python</span>
-                            <span>SQL</span>
+                            <span>PostgreSQL</span>
+                            <span>Redis</span>
                         </div>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">99.9%</span>
+                                <span class="metric-label">Uptime</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">15+</span>
+                                <span class="metric-label">Stations</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">50K+</span>
+                                <span class="metric-label">Daily Data</span>
+                            </div>
+                        </div>
+                        <a href="projects/vessel-monitoring-system.html" class="btn btn-outline btn-sm">
+                            View Case Study <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
+                <!-- Project 2 - M-STOCK -->
                 <div class="project-card">
                     <div class="project-image">
                         <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=400&fit=crop" alt="M-STOCK Trading Platform">
                         <div class="project-overlay">
-                            <a href="#" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
+                            <a href="projects/mstock-trading-platform.html" class="project-link">
+                                <i class="fas fa-eye"></i> View Details
                             </a>
                         </div>
                     </div>
@@ -380,19 +420,22 @@
                         <div class="project-tech">
                             <span>Python Django</span>
                             <span>Go</span>
-                            <span>MQTT</span>
                             <span>Redis</span>
+                            <span>PostgreSQL</span>
                         </div>
+                        <a href="projects/mstock-trading-platform.html" class="btn btn-outline btn-sm">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
+                <!-- Project 3 - DMA -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="FIX Protocol Integration">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Direct Market Access">
                         <div class="project-overlay">
-                            <a href="#" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
+                            <a href="projects/direct-market-access.html" class="project-link">
+                                <i class="fas fa-eye"></i> View Details
                             </a>
                         </div>
                     </div>
@@ -407,16 +450,19 @@
                             <span>FIX Protocol</span>
                             <span>Docker</span>
                         </div>
+                        <a href="projects/direct-market-access.html" class="btn btn-outline btn-sm">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Project 4 -->
+                <!-- Project 4 - CMS -->
                 <div class="project-card">
                     <div class="project-image">
                         <img src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?w=600&h=400&fit=crop" alt="Cable Management System">
                         <div class="project-overlay">
-                            <a href="#" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
+                            <a href="projects/cable-management-system.html" class="project-link">
+                                <i class="fas fa-eye"></i> View Details
                             </a>
                         </div>
                     </div>
@@ -431,16 +477,19 @@
                             <span>MQTT</span>
                             <span>Python</span>
                         </div>
+                        <a href="projects/cable-management-system.html" class="btn btn-outline btn-sm">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Project 5 -->
+                <!-- Project 5 - KEMFOOD -->
                 <div class="project-card">
                     <div class="project-image">
                         <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&h=400&fit=crop" alt="KEMFOOD POS">
                         <div class="project-overlay">
-                            <a href="#" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
+                            <a href="projects/kemfood-pos.html" class="project-link">
+                                <i class="fas fa-eye"></i> View Details
                             </a>
                         </div>
                     </div>
@@ -455,16 +504,19 @@
                             <span>PostgreSQL</span>
                             <span>React Native</span>
                         </div>
+                        <a href="projects/kemfood-pos.html" class="btn btn-outline btn-sm">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Project 6 -->
+                <!-- Project 6 - Medical -->
                 <div class="project-card">
                     <div class="project-image">
                         <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=400&fit=crop" alt="Medical Devices">
                         <div class="project-overlay">
-                            <a href="#" class="project-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
+                            <a href="projects/medical-devices.html" class="project-link">
+                                <i class="fas fa-eye"></i> View Details
                             </a>
                         </div>
                     </div>
@@ -479,6 +531,9 @@
                             <span>C#</span>
                             <span>Medical Device</span>
                         </div>
+                        <a href="projects/medical-devices.html" class="btn btn-outline btn-sm">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -749,7 +804,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Mochamad Teguh Subarkah. Built with <i class="fas fa-heart"></i> using HTML, CSS & JavaScript</p>
+            <p>&copy; 2025 Mochamad Teguh Subarkah. Built with <i class="fas fa-heart"></i> using HTML, CSS & JavaScript</p>
         </div>
     </footer>
 
