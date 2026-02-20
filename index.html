@@ -326,6 +326,7 @@
     </section>
 
    <!-- Projects Section -->
+<!-- Projects Section -->
 <section id="projects" class="projects">
     <div class="container">
         <div class="section-header">
@@ -354,9 +355,9 @@
 
         <div class="projects-grid">
 
-            <!-- ==================== -->
-            <!-- FEATURED: AIS / VMS  -->
-            <!-- ==================== -->
+            <!-- ========================================= -->
+            <!-- FEATURED: AIS Monitoring / VMS            -->
+            <!-- ========================================= -->
             <div class="project-card featured" data-category="marine">
                 <div class="project-badge">Featured Project</div>
                 <div class="project-card-inner">
@@ -382,8 +383,8 @@
                             </div>
                         </div>
                         <p class="project-description">
-                            Enterprise-grade vessel monitoring platform for submarine cable protection. 
-                            Real-time AIS data ingestion from 15+ coastal stations, processing 
+                            Enterprise-grade vessel monitoring platform for submarine cable protection.
+                            Real-time AIS data ingestion from 15+ coastal stations, processing
                             50,000+ vessel positions daily across Indonesian waters.
                         </p>
                         <div class="project-features-mini">
@@ -434,9 +435,9 @@
                 </div>
             </div>
 
-            <!-- ==================== -->
-            <!-- M-STOCK              -->
-            <!-- ==================== -->
+            <!-- ========================================= -->
+            <!-- M-STOCK Trading Platform                  -->
+            <!-- ========================================= -->
             <div class="project-card" data-category="fintech">
                 <div class="project-card-inner">
                     <div class="project-image">
@@ -460,9 +461,9 @@
                             </div>
                         </div>
                         <p class="project-description">
-                            Revamped online stock trading platform serving 100K+ users with real-time 
-                            order book streaming, WebSocket-based updates, and comprehensive 
-                            order management for the Indonesia Stock Exchange.
+                            Revamped online stock trading platform serving 100K+ users with real-time
+                            order book streaming via MQTT, WebSocket-based order status updates,
+                            and comprehensive order management for the Indonesia Stock Exchange.
                         </p>
                         <div class="project-tech">
                             <span>Python Django</span>
@@ -470,6 +471,7 @@
                             <span>MQTT</span>
                             <span>Redis</span>
                             <span>Oracle</span>
+                            <span>Docker</span>
                         </div>
                         <div class="project-footer">
                             <div class="project-metrics">
@@ -490,9 +492,9 @@
                 </div>
             </div>
 
-            <!-- ==================== -->
-            <!-- DMA                  -->
-            <!-- ==================== -->
+            <!-- ========================================= -->
+            <!-- Direct Market Access                      -->
+            <!-- ========================================= -->
             <div class="project-card" data-category="fintech">
                 <div class="project-card-inner">
                     <div class="project-image">
@@ -510,22 +512,23 @@
                     <div class="project-content">
                         <div class="project-content-header">
                             <div>
-                                <h3>Direct Market Access</h3>
+                                <h3>Direct Market Access (DMA)</h3>
                                 <p class="project-company">
                                     <i class="fas fa-building"></i> Mirae Asset Sekuritas &middot; 2022 – 2024
                                 </p>
                             </div>
                         </div>
                         <p class="project-description">
-                            First-ever FIX protocol trading gateway at the company, connecting 
-                            Bloomberg and Marvelsoft terminals for institutional clients to 
-                            execute direct market orders on IDX.
+                            First-ever FIX protocol trading gateway at the company, connecting
+                            Bloomberg and Marvelsoft terminals for institutional clients to
+                            execute direct market orders on IDX with low-latency execution.
                         </p>
                         <div class="project-tech">
                             <span>Java</span>
                             <span>FIX Protocol</span>
                             <span>QuickFIX/J</span>
                             <span>JavaFX</span>
+                            <span>Socket</span>
                         </div>
                         <div class="project-footer">
                             <div class="project-metrics">
@@ -546,9 +549,174 @@
                 </div>
             </div>
 
-            <!-- ==================== -->
-            <!-- CABLE MANAGEMENT     -->
-            <!-- ==================== -->
+            <!-- ========================================= -->
+            <!-- NAVI - Mutual Fund App                    -->
+            <!-- ========================================= -->
+            <div class="project-card" data-category="fintech">
+                <div class="project-card-inner">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=600&h=400&fit=crop" alt="NAVI Mutual Fund App">
+                        <div class="project-overlay">
+                            <a href="projects/mstock-trading-platform.html#navi" class="project-link-btn">
+                                <i class="fas fa-eye"></i> View Details
+                            </a>
+                        </div>
+                        <div class="project-image-tags">
+                            <span class="image-tag"><i class="fas fa-piggy-bank"></i> Mutual Fund</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-content-header">
+                            <div>
+                                <h3>NAVI – Mutual Fund App</h3>
+                                <p class="project-company">
+                                    <i class="fas fa-building"></i> Mirae Asset Sekuritas &middot; 2022 – 2023
+                                </p>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Online mutual fund marketplace enabling users to invest in various
+                            fund products. Built backend APIs for SSO registration, money
+                            withdrawal, and fund data retrieval with Kafka-based messaging.
+                        </p>
+                        <div class="project-tech">
+                            <span>Java Spring</span>
+                            <span>Kafka</span>
+                            <span>Docker</span>
+                            <span>Grafana</span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">SSO</span>
+                                    <span class="metric-label">Auth</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">Kafka</span>
+                                    <span class="metric-label">Events</span>
+                                </div>
+                            </div>
+                            <a href="projects/mstock-trading-platform.html#navi" class="btn btn-outline btn-sm">
+                                View Details <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================================= -->
+            <!-- Report Portal                             -->
+            <!-- ========================================= -->
+            <div class="project-card" data-category="fintech enterprise">
+                <div class="project-card-inner">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Internal Report Portal">
+                        <div class="project-overlay">
+                            <a href="projects/mstock-trading-platform.html#report-portal" class="project-link-btn">
+                                <i class="fas fa-eye"></i> View Details
+                            </a>
+                        </div>
+                        <div class="project-image-tags">
+                            <span class="image-tag"><i class="fas fa-file-alt"></i> Enterprise</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-content-header">
+                            <div>
+                                <h3>Internal Report Portal</h3>
+                                <p class="project-company">
+                                    <i class="fas fa-building"></i> Mirae Asset Sekuritas &middot; 2022 – 2024
+                                </p>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Full-stack internal portal consolidating business reports across
+                            divisions — OJK compliance, fund sales performance, stock sales,
+                            and role-based access control. Helped boost mutual fund AUM to 1.5B+ IDR.
+                        </p>
+                        <div class="project-tech">
+                            <span>Java Spring Boot</span>
+                            <span>Thymeleaf</span>
+                            <span>Docker</span>
+                            <span>SQL</span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">1.5B+</span>
+                                    <span class="metric-label">AUM (IDR)</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">OJK</span>
+                                    <span class="metric-label">Compliant</span>
+                                </div>
+                            </div>
+                            <a href="projects/mstock-trading-platform.html#report-portal" class="btn btn-outline btn-sm">
+                                View Details <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================================= -->
+            <!-- Whistleblow System                        -->
+            <!-- ========================================= -->
+            <div class="project-card" data-category="enterprise">
+                <div class="project-card-inner">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1589578527966-fdac0f44566c?w=600&h=400&fit=crop" alt="Whistleblow Incident Reporting">
+                        <div class="project-overlay">
+                            <a href="projects/mstock-trading-platform.html#whistleblow" class="project-link-btn">
+                                <i class="fas fa-eye"></i> View Details
+                            </a>
+                        </div>
+                        <div class="project-image-tags">
+                            <span class="image-tag"><i class="fas fa-user-shield"></i> Compliance</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-content-header">
+                            <div>
+                                <h3>Whistleblow System</h3>
+                                <p class="project-company">
+                                    <i class="fas fa-building"></i> Mirae Asset Sekuritas &middot; 2023
+                                </p>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Anonymous incident reporting platform for internal compliance.
+                            Secure file storage via MinIO (Google Bucket compatible), case
+                            management workflows, and service discovery with Consul.
+                        </p>
+                        <div class="project-tech">
+                            <span>Go</span>
+                            <span>Docker</span>
+                            <span>MinIO</span>
+                            <span>Consul</span>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">Secure</span>
+                                    <span class="metric-label">Storage</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">Anon</span>
+                                    <span class="metric-label">Reporting</span>
+                                </div>
+                            </div>
+                            <a href="projects/mstock-trading-platform.html#whistleblow" class="btn btn-outline btn-sm">
+                                View Details <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ========================================= -->
+            <!-- Cable Management System                   -->
+            <!-- ========================================= -->
             <div class="project-card" data-category="marine hardware">
                 <div class="project-card-inner">
                     <div class="project-image">
@@ -573,8 +741,8 @@
                             </div>
                         </div>
                         <p class="project-description">
-                            Live submarine cable monitoring during deployment with real-time 
-                            tension tracking, cable length measurement, and integrated alarm 
+                            Live submarine cable monitoring during deployment with real-time
+                            tension tracking, cable length measurement, and integrated alarm
                             system running 24/7 on deployment vessels.
                         </p>
                         <div class="project-tech">
@@ -602,9 +770,9 @@
                 </div>
             </div>
 
-            <!-- ==================== -->
-            <!-- KEMFOOD POS          -->
-            <!-- ==================== -->
+            <!-- ========================================= -->
+            <!-- KEMFOOD POS                               -->
+            <!-- ========================================= -->
             <div class="project-card" data-category="enterprise">
                 <div class="project-card-inner">
                     <div class="project-image">
@@ -628,8 +796,8 @@
                             </div>
                         </div>
                         <p class="project-description">
-                            Complete POS system with inventory management, supplier-buyer 
-                            marketplace, virtual account payment integration with BCA, 
+                            Complete POS system with inventory management, supplier-buyer
+                            marketplace, virtual account payment integration with BCA,
                             and comprehensive business reporting.
                         </p>
                         <div class="project-tech">
@@ -646,9 +814,9 @@
                 </div>
             </div>
 
-            <!-- ==================== -->
-            <!-- MEDICAL DEVICES      -->
-            <!-- ==================== -->
+            <!-- ========================================= -->
+            <!-- HFNC & CPAP Medical Devices               -->
+            <!-- ========================================= -->
             <div class="project-card" data-category="hardware">
                 <div class="project-card-inner">
                     <div class="project-image">
@@ -673,9 +841,9 @@
                             </div>
                         </div>
                         <p class="project-description">
-                            Led development of lite HFNC and CPAP machines during COVID-19 
-                            pandemic. Managed full product lifecycle from R&D through 
-                            production, helping patients in need.
+                            Led development of lite HFNC and CPAP machines during COVID-19
+                            pandemic. Managed full product lifecycle from R&D through
+                            production, helping patients in critical need.
                         </p>
                         <div class="project-tech">
                             <span>Embedded Systems</span>
